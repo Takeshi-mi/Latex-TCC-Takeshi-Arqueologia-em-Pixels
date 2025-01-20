@@ -6,6 +6,8 @@ pdflatex main -interaction=nonstopmode
 
 bibtex main
 
+makeglossaries main
+
 pdflatex main -interaction=nonstopmode
 
 pdflatex main -interaction=nonstopmode
