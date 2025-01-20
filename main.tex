@@ -85,7 +85,6 @@
 \usepackage[acronym]{glossaries} % Ativa glossários e acrônimos
 \makeglossaries
 \immediate\write18{makeglossaries \jobname}
-\input{text/acronimos}
 
 % Configuração de legendas
 \captionsetup[table]{position=top,justification=centering,width=.85\textwidth,labelfont=bf,font=footnotesize}
@@ -146,10 +145,16 @@ Preservação da Arte Rupestre Formosense
 
 % Dedicatoria
 \begin{dedicatory}
-Eu dedico ...
+Eu dedico esse trabalho à todas as pessoas que acreditam que preservar nossa história é importante.
 \end{dedicatory}
 
 % Agradecimentos
+\acknowledgements
+% \input{text/agradecimentos}
+
+% \begin{epigraph}[]{Márcio de Deus}
+% When one finds a hard problem, the more complicated it is, the more one ought to work towards enlightening it's solution.
+% \end{epigraph}
 \input{text/agradecimentos}
 
 % Resumo e Abstract
@@ -173,8 +178,9 @@ Eu dedico ...
 \include{text/1_Introducao}
 \include{text/2_Referencial_Teorico}
 \include{text/3_Metodo}
-\include{text/4_Resultados}
-\include{text/5_Conclusao}
+\include{text/4_Desenvolvimento}
+\include{text/5_Resultados}
+\include{text/6_Conclusao}
 
 % Referências
 \begin{references}

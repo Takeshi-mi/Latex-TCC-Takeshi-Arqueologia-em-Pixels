@@ -1,0 +1,61 @@
+\chapter{Desenvolvimento}
+\label{cap:desenvolvimento}
+\section{Desenvolvimento do Ambiente Virtual}
+\label{sec:desenvolvimento_ambiente_virtual}
+    \subsection{Visitas ao Local e Captura de Imagens para Fotogrametria}
+    \label{sec:visitas_fotogrametria}
+    Relato das visitas realizadas para captura de imagens usando drones e câmeras, detalhando condições e equipamentos.
+    Descrever as visitas realizadas à Toca da Onça e o processo de captura de imagens com drones e câmeras para a fotogrametria. Especificar as condições do local, horários das visitas e configurações dos dispositivos utilizados.
+
+
+    \subsection{Processo de Fotogrametria}
+    \label{sec:processo_fotogrametria}
+    Explicação do uso do Reality Capture para gerar modelos 3D, incluindo etapas de otimização e texturização.
+    Detalhar o processo de fotogrametria utilizado, especificando o equipamento e as técnicas adotadas para capturar as imagens necessárias à criação de um modelo 3D fiel ao local.
+
+    \subsection{Modelagem 3D e Unreal Engine}
+    \label{sec:modelagem_unreal}
+    O modelo 3D gerado passou por um processo de refinamento, que incluiu a remoção de ruídos, a aplicação de texturas para realçar a qualidade visual e garantir a qualidade do modelo final. O modelo 3D final foi fatiado em várias partes menores para então ser exportado no formato .fbx para a plataforma de desenvolvimento de jogos Unreal Engine 5.4 e colocado em escala Figura \ref{fig:unreal-print}, possibilitando a criação de um ambiente virtual imersivo, com recursos como simulação de luz, movimentações de câmera e personagens, além da criação de um ambiente virtual interativo para simular uma visita à Lapa da Pedra. Em seguida a simulação gerada na Unreal Engine foi empacotada para plataforma Windows e disponibilizada para download no site 
+    \href{https://arqueologiaformosa.vercel.app/}{www.arqueologiaformosa.vercel.app}.
+    
+    Cada ferramenta, tecnologia, definições e todo o arcabouço teórico do trabalho deve estar em seu \nameref{Referencial_Teorico}.
+    Aqui, no \nameref{Metodo} você deve escrever como utilizou as ferramentas, tecnologias e outros recursos para resolver o problema proposto com vistas a alcançar seus objetivos.
+    Este não é lugar para definir nada novo.
+    
+    
+    Para finalizar, a qualidade do modelo 3D e do ambiente virtual foi avaliada visualmente, verificando a precisão das formas, a qualidade das texturas e a capacidade de navegação e interação dentro do ambiente virtual. O ambiente virtual 3D foi testado por usuários para avaliar a facilidade de navegação, a interação com os elementos do ambiente e a compreensão das informações apresentadas.
+    
+    \subsection{Metahumans e Representações Digitais}
+    Descrever o uso de Metahumans no ambiente virtual para a criação de experiências mais imersivas, explicando como as representações digitais enriquecem a experiência do usuário no ambiente.
+
+    \subsection{Empacotamento e D
+    istribuição para Windows}
+    \label{sec:empacotamento}
+    Detalhes sobre o empacotamento do ambiente virtual usando o Inno Setup para distribuição.
+
+%%------------------------------------------------%
+\section{Desenvolvimento do Novo Site}
+\subsection{Análise do Blog Arqueologia Formosa e seus problemas}
+A avaliar o blog original e as melhorias propostas.
+Será feita uma análise de UX com opiniões de 3 especialisas diferentes.
+Conforme é feito nesse vídeo: 
+Os analistas foram o Naoki Miura e o Victor Hugo Sales
+
+
+\subsection{Prototipação com Figma}
+Descrever o processo de prototipação.
+
+\subsection{Implementação}
+Detalhar o uso de HTML, CSS, Javascript e Laravel.
+
+    \section{Estrutura (Next.js e Sanity)}
+    \label{sec:desenvolvimento_site}
+Descrição da estrutura do projeto, incluindo a configuração do Tailwind CSS, criação de rotas no Next.js, e integração com Sanity para gerenciamento de conteúdo.
+
+\section{Gerenciamento de Conteúdo com Sanity}
+\label{sec:gerenciamento_conteudo}
+Explicação sobre os schemas criados no Sanity para gerenciar artigos, imagens, publicações e outros conteúdos.
+
+\section{Integração com Serviços Externos}
+\label{sec:integracao_servicos}
+Detalhes sobre a integração com serviços como Flickr para imagens, Sketchfab para modelos 3D e Google Maps para localização.
