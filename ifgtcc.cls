@@ -700,7 +700,7 @@ requirements for the degree of \@degree\ in \@majorfielden.
 
 \def\acknowledgements{%
   \pagestyle{empty}
-  \chapter*{\acknowledgementsname}
+  \chapter*{\huge \acknowledgementsname}
   \thispagestyle{empty}}
 
 
