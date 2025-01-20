@@ -141,8 +141,10 @@ A capacidade de gerar personagens virtuais realistas e personalizáveis, combina
 \subsection{Modelos de Processo}
 Discutir diferentes modelos de processo de desenvolvimento de software, como Cascata, Agile, etc.
 
-\subsection{Diagrama da UML}
-Explicar a importância da UML (Unified Modeling Language) na modelagem de sistemas.
+\subsection{UML: Unified Modeling Language}
+A Unified Modeling Language (UML) é uma linguagem de modelagem amplamente utilizada para visualizar, especificar, construir e documentar artefatos de sistemas de software \citep{Booch2005}. Criada por Grady Booch, James Rumbaugh e Ivar Jacobson, a UML oferece um conjunto de diagramas padronizados que auxiliam no entendimento e na comunicação entre equipes de desenvolvimento. Segundo \cite{Booch2005}, a UML é composta por diagramas estruturais (como Diagramas de Classe e de Objetos) e comportamentais (como Diagramas de Caso de Uso e de Sequência), que permitem representar diferentes perspectivas de um sistema.
+
+A UML tem sido fundamental para a engenharia de software, especialmente no contexto de desenvolvimento orientado a objetos. Conforme destacado por \cite{Fowler2005}, a linguagem é flexível o suficiente para ser adaptada a diferentes metodologias de desenvolvimento, como o Rational Unified Process (RUP) e métodos ágeis. Além disso, a UML é mantida e atualizada pela Object Management Group (OMG), garantindo sua evolução contínua para atender às necessidades da indústria de software \citep{OMG2017}.
 
 \subsection{Cenário de Caso de Uso}
 Descrever o que é um cenário de caso de uso e sua importância na definição de requisitos.
@@ -160,26 +162,93 @@ Definir o que é desenvolvimento web e a sua importância. Diferenciar entre fro
 \subsection{Tecnologias Usadas}
 Descrever as principais linguagens usadas, como HTML, CSS e JavaScript, além de frameworks como React, Angular e Vue.js. Comentar sobre linguagens e frameworks usados para o back-end, como Laravel, Django, Ruby on Rails, etc. Discutir tipos de bancos de dados, relacionais e não relacionais, e o uso de MySQL como exemplo.
 
-\subsection{Princípios de Design Responsivo}
-Explicar o conceito de design responsivo e a importância da adaptabilidade em diferentes dispositivos. Introduzir práticas de design centradas no usuário.
-
 \subsection{Experiência do Usuário (UX)}
-\subsubsection{Conceitos de UX}
-Definir o que é experiência do usuário e por que ela é crucial no design de aplicações web.
+A Experiência do Usuário (UX) é um conceito fundamental no design de sistemas interativos, focando na satisfação e na eficiência do usuário ao interagir com um produto ou serviço. Segundo \cite{Norman}, UX abrange todos os aspectos da interação do usuário com uma interface, desde a usabilidade até a experiência emocional.
 
-\subsubsection{Heurísticas de Usabilidade de Nielsen}
-Apresentar as heurísticas de usabilidade e sua relevância para a criação de sistemas mais intuitivos.
-\subsubsection{Heurísticas de Usabilidade de Kaniasty}
+\subsubsection{Heurísticas de Nielsen}
+As heurísticas de Nielsen, propostas por Jakob Nielsen em 1994, são um conjunto de princípios amplamente utilizados para avaliar a usabilidade de interfaces. Essas heurísticas servem como diretrizes para identificar problemas de usabilidade e melhorar a interação do usuário. A seguir, são apresentadas as 10 heurísticas de Nielsen:
 
+\begin{enumerate}
+    \item \textbf{Visibilidade do Status do Sistema}: O sistema deve sempre manter os usuários informados sobre o que está acontecendo, por meio de feedback adequado e em tempo razoável. Por exemplo, barras de progresso ou mensagens de carregamento são formas de fornecer feedback.
 
-\subsubsection{Importância em Preservação Cultural}
-Discutir como a experiência do usuário impacta a preservação de arte rupestre em ambientes virtuais.
+    \item \textbf{Correspondência entre o Sistema e o Mundo Real}: O sistema deve falar a linguagem do usuário, com palavras, frases e conceitos familiares, em vez de termos técnicos. As informações devem aparecer em uma ordem natural e lógica.
+
+    \item \textbf{Controle e Liberdade para o Usuário}: Os usuários frequentemente realizam ações por engano e precisam de uma "saída de emergência" claramente marcada para sair do estado indesejado. Isso inclui funcionalidades como "Desfazer" e "Refazer".
+
+    \item \textbf{Consistência e Padrões}: Os usuários não devem se perguntar se palavras, situações ou ações diferentes significam a mesma coisa. Siga as convenções da plataforma e mantenha a consistência em todo o sistema.
+
+    \item \textbf{Prevenção de Erros}: Um bom design evita que problemas ocorram. Isso pode ser feito eliminando condições propícias a erros ou verificando se há erros antes que o usuário confirme uma ação.
+
+    \item \textbf{Reconhecimento em vez de Memorização}: Minimize a carga de memória do usuário, tornando objetos, ações e opções visíveis. O usuário não deve precisar lembrar informações de uma parte do sistema para outra.
+
+    \item \textbf{Flexibilidade e Eficiência de Uso}: Aceleradores (como atalhos de teclado) podem aumentar a eficiência para usuários experientes, sem prejudicar a experiência de usuários iniciantes.
+
+    \item \textbf{Estética e Design Minimalista}: As interfaces não devem conter informações irrelevantes ou raramente necessárias. Cada unidade extra de informação compete com as unidades relevantes e diminui sua visibilidade relativa.
+
+    \item \textbf{Ajudar os Usuários a Reconhecer, Diagnosticar e Recuperar-se de Erros}: As mensagens de erro devem ser expressas em linguagem simples, indicar precisamente o problema e sugerir uma solução de forma construtiva.
+
+    \item \textbf{Ajuda e Documentação}: Embora seja melhor que o sistema possa ser usado sem documentação, pode ser necessário fornecer ajuda e documentação. Essas informações devem ser fáceis de encontrar, focadas na tarefa do usuário e listar etapas concretas a serem seguidas.
+\end{enumerate}
+
+Essas heurísticas são amplamente utilizadas em avaliações de usabilidade, como inspeções heurísticas, para identificar problemas em interfaces e propor melhorias \citep{Nielsen1994}.
+
+\subsubsection{Análise Heurística}
+A \textbf{Análise Heurística} é um método de avaliação de usabilidade que consiste na inspeção sistemática de uma interface com base em um conjunto de princípios ou heurísticas predefinidas. Esse método é amplamente utilizado para identificar problemas de usabilidade em sites, aplicativos e outros sistemas interativos, sem a necessidade de envolvimento direto dos usuários.
+
+\paragraph{Objetivos da Análise Heurística}
+Os principais objetivos da análise heurística são:
+
+\begin{itemize}
+    \item Identificar problemas de usabilidade que possam prejudicar a experiência do usuário.
+    \item Avaliar a conformidade da interface com princípios de design reconhecidos, como as heurísticas de Nielsen.
+    \item Propor melhorias que aumentem a eficiência, a satisfação e a acessibilidade do sistema.
+\end{itemize}
+
+\paragraph{Etapas da Análise Heurística}
+O processo de análise heurística geralmente envolve as seguintes etapas:
+
+\begin{enumerate}
+    \item \textbf{Seleção das Heurísticas}: Escolha um conjunto de heurísticas adequado ao contexto da avaliação, como as heurísticas de Nielsen ou Kanisaty.
+    
+    \item \textbf{Inspeção da Interface}: Um ou mais avaliadores examinam a interface, aplicando as heurísticas selecionadas para identificar problemas de usabilidade.
+    
+    \item \textbf{Documentação dos Problemas}: Cada problema identificado é documentado, descrevendo sua natureza, a heurística violada e, se possível, sugerindo uma solução.
+    
+    \item \textbf{Priorização e Relatório}: Os problemas são priorizados com base em sua gravidade e impacto na experiência do usuário, e um relatório detalhado é gerado para orientar as melhorias.
+\end{enumerate}
+
+\paragraph{Aplicações da Análise Heurística}
+A análise heurística é aplicável em diversas situações, tais como:
+
+\begin{itemize}
+    \item Avaliação de protótipos durante o processo de design.
+    \item Redesign de sites ou aplicativos existentes.
+    \item Testes de usabilidade complementares, fornecendo insights adicionais.
+\end{itemize}
+
+Segundo \cite{Nielsen1994}, a análise heurística é uma das técnicas mais eficazes para identificar problemas de usabilidade de forma rápida e econômica, sendo amplamente utilizada por equipes de UX e design.
+
+\subsection{Web Content Accessibility Guidelines (WCAG)}
+
+As \textbf{Web Content Accessibility Guidelines (WCAG)}, desenvolvidas pelo \textbf{W3C}, são padrões globais para acessibilidade digital, garantindo que interfaces sejam acessíveis a todos, incluindo pessoas com deficiências \citep{wcag21}. Organizadas em quatro princípios (\textbf{POUR}), as WCAG abordam:
+
+\begin{itemize}
+    \item \textbf{Perceivable (Perceptível)}: Conteúdo deve ser apresentado de forma acessível (ex.: alternativas textuais para imagens).
+    \item \textbf{Operable (Operável)}: Interfaces devem ser navegáveis por teclado e compatíveis com tecnologias assistivas.
+    \item \textbf{Understandable (Compreensível)}: Conteúdo e operação devem ser claros e previsíveis.
+    \item \textbf{Robust (Robusto)}: Conteúdo deve ser compatível com diversas tecnologias.
+\end{itemize}
+
+As WCAG possuem três níveis de conformidade: \textbf{A} (mínimo), \textbf{AA} (recomendado) e \textbf{AAA} (ótimo). Sua adoção promove inclusão digital, conformidade legal e melhoria da experiência do usuário \citep{wcag21}.
 
 \subsection{Melhores Práticas}
 Discutir a relevância da acessibilidade, otimização para SEO e práticas comuns de segurança em aplicações web.
 
-\subsection{Integração com API}
-Definir o que é uma API e como ela é útil na comunicação entre sistemas. Exemplificar como a integração de APIs pode enriquecer uma aplicação web.
+
+\section{JAMstack e Desenvolvimento Web Moderno}
+\label{sec:jamstack}
+    % Explicar o conceito de JAMstack, vantagens, ferramentas (Next.js, Vercel, Headless CMS)
+
 
 \section{Ferramentas Utilizadas}
 \subsection{Visual Studio Code versão 1.88}
@@ -228,26 +297,9 @@ O Heurio oferece uma série de funcionalidades que facilitam a análise heuríst
 \subsubsection{Aplicação do Heurio}
 O Heurio é particularmente útil em projetos de \textit{redesign} de sites, avaliação de protótipos e testes de usabilidade. Ele pode ser utilizado por equipes de \gls{ux}, designers e desenvolvedores para garantir que as interfaces atendam aos princípios de usabilidade e proporcionem uma experiência positiva ao usuário. Além disso, a ferramenta é flexível o suficiente para ser adaptada a diferentes contextos e metodologias de avaliação.
 
-A extensão Heurio é um exemplo de como a tecnologia pode ser utilizada para aprimorar práticas de UX, tornando a análise heurística mais acessível e eficiente \cite{Heurio2023}.
+A extensão Heurio é um exemplo de como a tecnologia pode ser utilizada para aprimorar práticas de UX, tornando a análise heurística mais acessível e eficiente \citep{Heurio2023}.
 
 \subsection{Inno Setup}
 Descrever a ferramenta Inno Setup para a criação de instaladores, discutindo como ela facilita a distribuição do software.
-    \section{JAMstack e Desenvolvimento Web Moderno}
-    \label{sec:jamstack}
-    % Explicar o conceito de JAMstack, vantagens, ferramentas (Next.js, Vercel, Headless CMS)
-
-    \section{Experiência do Usuário e Usabilidade}
-    \label{sec:ux_usabilidade}
-    % Conceitos de UX, heurísticas de Nielsen, Kanisatsy, acessibilidade etc.
-
-    \section{Ferramentas Utilizadas}
-    \label{sec:ferramentas_utilizadas}
-    % Apresentar um panorama das ferramentas:
-    % - Next.js, Tailwind CSS, Figma
-    % - Sanity (CMS)
-    % - Flickr, Google Drive (arquivos grandes)
-    % - Reality Capture, Unreal Engine 5.4
-    % - Google Maps (Mapas Interativos)
-    % - Vercel, etc.
 
 
