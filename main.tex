@@ -82,9 +82,19 @@
 \usepackage{float}
 \usepackage{media9}
 \usepackage{animate}
+\usepackage{xparse} % Para criar comandos personalizados
 \usepackage[acronym]{glossaries} % Ativa glossários e acrônimos
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref} 
+
 \makeglossaries
-\immediate\write18{makeglossaries \jobname}
+% Comando personalizado
+\NewDocumentCommand{\glsboth}{m}{%
+    \gls{#1} % Referencia o acrônimo
+    \glsadd{#1-gloss} % Adiciona a entrada correspondente no glossário
+}
+
+\input{text/acronimos}
+\input{text/glossario}
 
 % Configuração de legendas
 \captionsetup[table]{position=top,justification=centering,width=.85\textwidth,labelfont=bf,font=footnotesize}
@@ -127,7 +137,7 @@ Preservação da Arte Rupestre Formosense
 \date{2024}
 \author{Erik Takeshi Miura}
 \adviser{Prof. Me. Afrânio Furtado de Oliveira Neto}
-\coadviser{Prof. Me. Edson Rodrigues Borges}
+\coadviser{Prof. Dr. Edson Rodrigues Borges}
 
 % Início do Documento
 \begin{document}
@@ -170,11 +180,12 @@ Eu dedico esse trabalho à todas as pessoas que acreditam que preservar nossa hi
 % Listas de Figuras e Tabelas
 \listoffigures
 \listoftables
-% \printglossary[type=\acronymtype, style=longlistwithpages, title={Lista de Acrônimos}]
-\listofacronyms
-
+\printglossary[type=\acronymtype, title={Acrônimos}] %lista de acrônimos
+\printglossary %glossário
 % Corpo do TCC
 \mainmatter
+O \glsboth{ux} é essencial para o sucesso do produto.
+O \glslink{ux}{\textit{User Experience (UX)}} é essencial para o sucesso do produto.
 \include{text/1_Introducao}
 \include{text/2_Referencial_Teorico}
 \include{text/3_Metodo}
