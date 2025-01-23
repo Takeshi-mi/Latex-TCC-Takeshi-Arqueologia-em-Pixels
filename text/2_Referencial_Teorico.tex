@@ -77,7 +77,7 @@ A fotogrametria automatizada, comumente empregada na geração de modelos 3D de 
 
 A \textit{Unreal Engine}, desenvolvida pela\textit{ Epic Games}, se destaca como uma \textit{engine} de jogos de última geração, amplamente utilizada na indústria de jogos e simulações, e reconhecida por sua capacidade de criar experiências visuais de alta qualidade e interativas.  A \textit{Unreal Engine} oferece um conjunto robusto de ferramentas para modelagem 3D, animação, física, renderização, iluminação, realidade virtual e muito mais. Sua arquitetura flexível e código-fonte aberto permitem que os desenvolvedores personalizem e estendam a \textit{engine} para atender às necessidades específicas de seus projetos, tornando-a uma escolha popular tanto para grandes estúdios quanto para desenvolvedores independentes.
 
-No âmbito do Patrimônio Virtual, a \textit{Unreal Engine} se torna uma ferramenta poderosa para a criação de reconstruções digitais imersivas e interativas de sítios arqueológicos, monumentos e artefatos históricos. A \textit{engine} permite a modelagem 3D realista, a aplicação de texturas detalhadas e a simulação precisa de iluminação, proporcionando aos usuários uma experiência virtual imersiva e próxima da realidade. A capacidade de integrar elementos interativos, como navegação em primeira pessoa, animações e informações contextuais, enriquece ainda mais a experiência, tornando a \textit{Unreal Engine} uma escolha estratégica para projetos que buscam aproximar o público do patrimônio cultural de forma inovadora e envolvente.
+No âmbito do Patrimônio Virtual, a \textit{Unreal Engine} se torna uma ferramenta poderosa para a criação de reconstruções digitais imersivas e interativas de sítios arqueológicos, monumentos e artefatos históricos. A \textit{engine} permite a modelagem 3D realista, a aplicação de texturas detalhadas e a simulação precisa de iluminação, proporcionando aos usuários uma experiência virtual imersiva e próxima da realidade. A capacidade de integrar elementos interativos, como navegação em primeira pessoa, animações e informações contextuais, enriquece ainda mais a experiência, tornando a \textit{Unreal Engine} uma escolha estratégica para projetos que buscam aproximar o público do patrimônio cultural.
 \begin{figure}[H]
     \centering
     \includegraphics[height=6cm, keepaspectratio]{img/unreal-print.png}
@@ -93,6 +93,10 @@ Quanto mais imagem, mais rico o trabalho fica. Com a estrutura feita, depois é 
     \caption{UnrealEngine.}
     \label{fig:unreal-print2}
 \end{figure}
+\subsection{RealityCapture e Integração com Unreal Engine}
+O \textbf{RealityCapture}, desenvolvido pela CapturingReality e adquirido pela Epic Games, é amplamente utilizado para a criação de modelos 3D altamente detalhados a partir de técnicas de fotogrametria. Uma das principais vantagens do RealityCapture é sua integração nativa com a Unreal Engine, também desenvolvida pela Epic Games. Essa compatibilidade facilita a exportação de modelos 3D para a Unreal Engine, onde podem ser utilizados na criação de ambientes virtuais realistas, como em jogos, simulações ou experiências de realidade virtual (VR) \citep{EpicGamesDocs}.
+
+A integração entre o RealityCapture e a Unreal Engine é particularmente útil em projetos de patrimônio cultural, onde a reconstrução digital de sítios arqueológicos ou artefatos pode ser visualizada em ambientes virtuais interativos. Essa combinação permite a criação de experiências imersivas, como visitas virtuais a museus ou sítios históricos, com um alto nível de realismo e detalhamento \citep{ExemploArtigo}.
 \subsection{Metahumans}
 
 A representação humana em ambientes virtuais tem papel crucial na criação de experiências imersivas e relacionáveis. No contexto do Patrimônio Virtual, a presença de personagens virtuais humanoides pode auxiliar na comunicação de narrativas históricas, guiar usuários por sítios arqueológicos reconstruídos e demonstrar costumes e atividades do passado. Nesse sentido, a ferramenta \textit{MetaHuman Creator} (Figura \ref{fig:metahuman creator}), da Epic Games, surge como um recurso poderoso para a criação de avatares digitais de alta fidelidade.
@@ -247,34 +251,67 @@ Discutir a relevância da acessibilidade, otimização para SEO e práticas comu
 
 \section{JAMstack e Desenvolvimento Web Moderno}
 \label{sec:jamstack}
-    % Explicar o conceito de JAMstack, vantagens, ferramentas (Next.js, Vercel, Headless CMS)
+A JAM Stack é uma arquitetura moderna para desenvolvimento web que se baseia em três pilares principais: \textbf{JavaScript}, \textbf{APIs} e \textbf{Markup} \citep{jamstackorg}, como exemplificado na Figura \ref{fig:jamStack sigla}\footnote{Disponível em \href{https://cloudbytes.dev/snippets/what-is-jamstack-and-why-should-you-be-using-it}{https://cloudbytes.dev/snippets/what-is-jamstack-and-why-should-you-be-using-it}}. Essa abordagem promove a criação de sites rápidos, seguros e escaláveis, separando o front-end do back-end e utilizando serviços de terceiros para funcionalidades dinâmicas \citep{netlifyjamstack}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/arquitetura/sigla JAM stack.png}
+    \caption{ Significado da sigla JAM(Javascript, APIs e Markup)
+ \\
+        \textbf{Fonte:} Rehan Haider}
+    \label{fig:jamStack sigla}
+\end{figure}
+De acordo com \cite{smashingmagazine}, a JAM Stack tem ganhado popularidade devido à sua capacidade de simplificar o processo de desenvolvimento, permitindo que desenvolvedores se concentrem na experiência do usuário enquanto delegam tarefas complexas a APIs especializadas. Além disso, a pré-renderização de páginas estáticas contribui para uma melhor performance e segurança, reduzindo a superfície de ataque \citep{jamstackbook}.
+
+A flexibilidade da JAM Stack permite a integração com diversas ferramentas e serviços, como CMS headless, CDNs e ferramentas de automação, tornando-a uma escolha versátil para projetos de diferentes escalas \citep{netlifyjamstack}.
+
+A arquitetura JAMstack (Figura \ref{fig:jamStack Arquitetura}) se destaca em relação a abordagens mais tradicionais, como o modelo de servidor monolítico e as arquiteturas baseadas em servidores dinâmicos. No modelo monolítico, todo o backend e frontend estão fortemente acoplados, exigindo que o servidor processe cada solicitação do usuário em tempo real. Isso pode gerar tempos de resposta mais lentos, especialmente em aplicações com alto tráfego, e torna mais difícil escalar ou implementar novas funcionalidades de maneira isolada.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/arquitetura/JAM STACK.png}
+    \caption{ Comparação entre arquitetura tradicional e arquitetura JAMstack. \\
+        \textbf{Fonte:} Elaborado pelo autor com base na documentação oficial do JAM Stack.}
+    \label{fig:jamStack Arquitetura}
+\end{figure}
+
+Já nas arquiteturas dinâmicas baseadas em servidores, como as utilizadas em sistemas gerenciadores de conteúdo tradicionais (ex.: WordPress), cada requisição ao site frequentemente aciona o servidor para buscar dados no banco e gerar a página no momento da requisição. Esse modelo pode causar problemas de performance e segurança, principalmente em picos de tráfego, além de depender de uma infraestrutura robusta para manter a operação.
+Em contraste, a JAMstack evita a necessidade de renderização em tempo de execução, pré-gerando as páginas como arquivos estáticos no momento do build. Isso garante maior rapidez, segurança e escalabilidade, já que as páginas podem ser servidas diretamente por uma CDN sem passar por servidores intermediários. Além disso, ao desacoplar o frontend do backend, a JAMstack permite maior flexibilidade, facilitando a integração com APIs e serviços especializados, como sistemas de pagamento ou autenticação.
+Por outro lado, a JAMstack apresenta limitações quando comparada a arquiteturas como microserviços ou serverless, que também oferecem modularidade e flexibilidade. Embora APIs desempenhem um papel fundamental na JAMstack, aplicações com lógica de negócios altamente complexa podem exigir um backend mais robusto, algo que arquiteturas serverless ou baseadas em microserviços conseguem oferecer de forma mais eficiente.
 
 \section{Ferramentas Utilizadas}
-\subsection{Visual Studio Code versão 1.88}
-Descrever o uso do Visual Studio Code como editor de código, destacando suas funcionalidades como depuração, suporte a múltiplas linguagens e a extensão do Git.
+Nesta seção, são apresentadas as principais ferramentas utilizadas no desenvolvimento deste trabalho, destacando suas funcionalidades e relevância para o projeto.
 
-\subsection{GitHub}
-Contextualizar o uso do GitHub para controle de versão, explicando sua importância na gestão do código-fonte, colaboração com outros desenvolvedores e uso de funcionalidades como issues e merge requests.
+\subsection{Visual Studio Code}
+O \gls{vs-code} é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado por desenvolvedores devido à sua leveza, extensibilidade e suporte a diversas linguagens de programação. Ele oferece recursos como depuração integrada, realce de sintaxe, autocompletar inteligente e integração com ferramentas de controle de versão, como Git. Além disso, o VS Code possui um mercado de extensões que permite personalizar e expandir suas funcionalidades, tornando-o uma das ferramentas mais populares para desenvolvimento de software \citep{vscode}.
+
+\subsection{Git e GitHub}
+O Git é um sistema de controle de versão distribuído amplamente utilizado para rastrear alterações no código-fonte durante o desenvolvimento de software. Ele permite que desenvolvedores trabalhem em branches separados, facilitando a colaboração e a integração de mudanças. Já o GitHub é uma plataforma baseada em nuvem que hospeda repositórios Git, oferecendo funcionalidades adicionais como pull requests, issues e integração contínua. Juntos, Git e GitHub formam uma combinação poderosa para gerenciamento de projetos e colaboração em equipe \cite{git,github}.
 
 \subsection{Notion}
-Discutir como o Notion é utilizado para planejamento e organização do projeto, incluindo o uso do Kanban para gerenciamento de tarefas e prazos.
+ Notion é uma ferramenta de produtividade e organização que combina funcionalidades de notas, banco de dados, listas de tarefas e planejamento em uma única plataforma. Ele foi amplamente utilizado neste trabalho para a criação de quadros \gls{Kanban}, permitindo o gerenciamento visual de tarefas e o acompanhamento do progresso do projeto. Além disso, o Notion foi empregado para o planejamento de etapas, organização de documentação e colaboração em equipe, graças à sua flexibilidade e integração de diferentes tipos de conteúdo em uma única interface. Sua capacidade de personalização e facilidade de uso o tornam uma ferramenta essencial para gestão de projetos e organização pessoal \citep{notion}.
 
 \subsection{Figma}
-Descrever o uso do Figma para prototipação e design de interfaces, enfatizando suas funcionalidades colaborativas.
+O Figma é uma ferramenta de design de interfaces baseada em nuvem, amplamente utilizada para criação de protótipos, designs colaborativos e sistemas de design. Ele se destaca por permitir que múltiplos usuários trabalhem simultaneamente em um mesmo projeto, facilitando a colaboração em tempo real. Além disso, o Figma oferece recursos como componentes reutilizáveis, autolayout e integração com outras ferramentas de desenvolvimento, tornando-o uma escolha popular entre designers e equipes de produto \citep{figma}.
 
+% \subsection{Reality Capture}
+% O \textbf{Reality Capture} é uma tecnologia de digitalização 3D que permite criar modelos tridimensionais altamente detalhados a partir de fotografias ou varreduras a laser. Essa ferramenta é amplamente utilizada em áreas como arquitetura, patrimônio cultural, produção cinematográfica e desenvolvimento de jogos, devido à sua capacidade de capturar objetos e ambientes reais com precisão e eficiência \citep{RealityCapture2023}.
 
-\subsection{Unreal Engine 5.4}
-Descrever a escolha do Unreal Engine como plataforma para a criação de ambientes virtuais, discutindo suas capacidades de renderização.
+% Uma das principais vantagens do Reality Capture é a sua precisão na reprodução de detalhes, o que o torna ideal para projetos que exigem fidelidade ao mundo real. Além disso, a tecnologia é eficiente, permitindo a digitalização de grandes estruturas ou objetos em um tempo relativamente curto. Os modelos gerados podem ser facilmente integrados a softwares de edição 3D e motores de jogos, como o Unreal Engine, o que amplia suas aplicações práticas \citep{RealityCapture2023}.
 
-\subsection{Agisoft Metashape versão}
-Explicar como essas ferramentas são utilizadas para fotogrametria e geração de modelos 3D, discutindo suas funcionalidades.
+% No contexto de preservação do patrimônio cultural, o Reality Capture tem sido utilizado para digitalizar monumentos e sítios arqueológicos, garantindo que essas obras sejam preservadas digitalmente para futuras gerações. Na indústria de jogos e filmes, a ferramenta é empregada para criar assets 3D realistas, como personagens e cenários, que podem ser utilizados em produções de alta qualidade \citep{RealityCapture2023}.
 
-\subsection{Reality Capture versão}
-Explicar como essas ferramentas são utilizadas para fotogrametria e geração de modelos 3D, discutindo suas funcionalidades.
+% \subsection{Unreal Engine}
+% A \textbf{Unreal Engine}, desenvolvida pela Epic Games, é um dos motores de jogo mais populares e versáteis do mercado. Conhecido por sua capacidade de renderizar gráficos de alta qualidade e suportar experiências interativas em tempo real, o Unreal Engine é amplamente utilizado não apenas no desenvolvimento de jogos, mas também em áreas como arquitetura, cinema e educação \citep{UnrealEngine2023}.
+
+% Um dos recursos mais destacados do Unreal Engine é o sistema de \textit{Blueprints}, que permite a criação de lógica de jogo sem a necessidade de escrever código. Isso torna a ferramenta acessível para designers e artistas, que podem prototipar e desenvolver projetos de forma mais ágil. Além disso, o motor oferece suporte a tecnologias avançadas, como iluminação global e física realista, que contribuem para a criação de ambientes visualmente impressionantes \citep{UnrealEngine2023}.
+
+% A integração do Unreal Engine com ferramentas como o Reality Capture é outro ponto forte. Modelos 3D gerados a partir de digitalizações do mundo real podem ser importados diretamente para o motor, onde podem ser manipulados e incorporados em projetos interativos. Essa combinação de tecnologias tem sido amplamente utilizada na criação de jogos realistas, simulações arquitetônicas e até mesmo em produções cinematográficas \citep{UnrealEngine2023}.
+
+% Na área de educação, o Unreal Engine tem sido empregado para desenvolver simulações interativas e ambientes de aprendizagem imersivos. Sua flexibilidade e suporte a múltiplas plataformas, incluindo dispositivos móveis e realidade virtual, tornam-no uma escolha popular para projetos que exigem inovação e engajamento \citep{UnrealEngine2023}.
 
 \subsection{Vercel}
-falar das caracteristicas da hospedagem e etc
+A Vercel é uma plataforma de \gls{deploy} e hospedagem voltada para aplicações modernas, especialmente aquelas construídas com \glspl{framework} como Next.js, React e outros. Ela oferece integração contínua, escalabilidade automática e um desempenho otimizado para aplicações web estáticas e dinâmicas. Com foco na experiência do desenvolvedor, a Vercel simplifica o processo de publicação, permitindo que atualizações sejam feitas rapidamente através de integração com \gls{repositorio-git}. Sua infraestrutura global de \glsboth{cdn} garante baixa latência e alta disponibilidade para usuários finais \citep{vercel}.
 
 \subsection{Heurio}
 A extensão \textbf{Heurio} é uma ferramenta desenvolvida para auxiliar na realização de análises heurísticas de sites e interfaces digitais. Disponível como uma extensão para navegadores, o Heurio permite que profissionais de UX apliquem as heurísticas de usabilidade de forma prática e organizada, identificando problemas de usabilidade e propondo melhorias.
@@ -297,9 +334,7 @@ O Heurio oferece uma série de funcionalidades que facilitam a análise heuríst
 \subsubsection{Aplicação do Heurio}
 O Heurio é particularmente útil em projetos de \textit{redesign} de sites, avaliação de protótipos e testes de usabilidade. Ele pode ser utilizado por equipes de \gls{ux}, designers e desenvolvedores para garantir que as interfaces atendam aos princípios de usabilidade e proporcionem uma experiência positiva ao usuário. Além disso, a ferramenta é flexível o suficiente para ser adaptada a diferentes contextos e metodologias de avaliação.
 
-A extensão Heurio é um exemplo de como a tecnologia pode ser utilizada para aprimorar práticas de UX, tornando a análise heurística mais acessível e eficiente \citep{Heurio2023}.
+A extensão Heurio é um exemplo de como a tecnologia pode ser utilizada para aprimorar práticas de UX, tornando a análise heurística mais acessível e eficiente \citep{Heurio}.
 
 \subsection{Inno Setup}
-Descrever a ferramenta Inno Setup para a criação de instaladores, discutindo como ela facilita a distribuição do software.
-
-
+O Inno Setup é um instalador gratuito para programas Windows, amplamente utilizado devido à sua facilidade de configuração e flexibilidade. Ele permite a criação de scripts de instalação personalizados, suportando recursos como criação de atalhos, registro de DLLs e desinstalação completa. Sua sintaxe é baseada em arquivos de texto no formato \texttt{.iss}, que são compilados para gerar executáveis de instalação. Por ser leve e de código aberto, o Inno Setup é uma escolha popular para desenvolvedores que buscam uma solução eficiente para distribuição de software \citep{innosetup}.

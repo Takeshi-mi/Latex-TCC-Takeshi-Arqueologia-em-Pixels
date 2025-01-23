@@ -1,14 +1,14 @@
 \chapter{Metodologia}
 \label{cap:metodologia}
 
-Este capítulo descreve a metodologia adotada para o desenvolvimento do presente trabalho, contemplando o tipo de pesquisa, as etapas de construção do artefato e as técnicas utilizadas. A fundamentação teórica baseia-se nos princípios da \textit{Design Science Research} (DSR), conforme proposto por \cite{gregor2013positioning} e \citep{GregorHevner2013}, cuja abordagem propicia a criação de artefatos tecnológicos para solucionar problemas práticos e a contribuição para o conhecimento científico na área de Sistemas de Informação.
+Este capítulo descreve a metodologia adotada para o desenvolvimento do presente trabalho, contemplando o tipo de pesquisa, as etapas de construção do artefato e as técnicas utilizadas. A fundamentação teórica baseia-se nos princípios da \textit{Design Science Research} (DSR), conforme proposto por \cite{gregor2013positioning} e , cuja abordagem propicia a criação de artefatos tecnológicos para solucionar problemas práticos e a contribuição para o conhecimento científico na área de Sistemas de Informação.
 
 \section{Tipo de Pesquisa e Justificativa}
 \label{sec:tipo_pesquisa}
 
 Este estudo caracteriza-se como uma pesquisa aplicada, pois tem como objetivo resolver um problema real --- a necessidade de melhorar a divulgação e a preservação do sítio arqueológico Lapa da Pedra por meio de soluções digitais. A adoção da \textit{Design Science Research} é justificada pelo fato de que, além de propor um \textbf{artefato} (site JAMstack + ambiente virtual), busca-se avaliar e aperfeiçoar sua utilidade e eficácia, documentando todo o processo de desenvolvimento.
 
-Segundo \citeonline{Hevner2004}, a DSR orienta-se pelas seguintes etapas: \textit{(i)} identificação do problema, \textit{(ii)} definição de objetivos, \textit{(iii)} desenho e desenvolvimento do artefato, \textit{(iv)} demonstração, \textit{(v)} avaliação e \textit{(vi)} comunicação. No presente projeto, essas etapas guiam as atividades desde a concepção do sistema até a sua verificação prática, garantindo rigor acadêmico e embasamento metodológico.
+Segundo \cite{gregor2013positioning}, a DSR orienta-se pelas seguintes etapas: \textit{(i)} identificação do problema, \textit{(ii)} definição de objetivos, \textit{(iii)} desenho e desenvolvimento do artefato, \textit{(iv)} demonstração, \textit{(v)} avaliação e \textit{(vi)} comunicação. No presente projeto, essas etapas guiam as atividades desde a concepção do sistema até a sua verificação prática, garantindo rigor acadêmico e embasamento metodológico.
 
 \section{Abordagem de Desenvolvimento}
 \label{sec:abordagem_desenvolvimento}
@@ -62,6 +62,125 @@ Já entre os requisitos não funcionais, destacam-se:
     \item \textbf{Segurança}: uso de HTTPS e prevenção contra ataques (XSS, CSRF);
     \item \textbf{Escalabilidade}: possibilidade de adicionar novos sítios arqueológicos sem reestruturar todo o sistema.
 \end{itemize}
+
+\section{Identificação dos Requisitos}
+\label{sec:identificacao_requisitos}
+
+Por convenção e para facilitar a identificação dos casos de uso junto aos contextos, a referência é feita de acordo com o esquema abaixo:
+
+\textbf{\[ Sigla de subseção | numeração\]}
+
+Os requisitos são identificados por uma sigla que representa a subseção (por exemplo, "RF" para Requisitos Funcionais, “RNF” para Requisitos Não Funcionais) seguida de um número sequencial.
+
+\section{Prioridades dos Requisitos}
+\label{sec:prioridades_requisitos}
+
+Para estabelecer a prioridade dos requisitos, foram adotadas as denominações: essencial, importante e desejável. Abaixo temos a descrição de significado de cada uma dessas denominações:
+
+\begin{table}[H]
+\centering
+\caption{Prioridades dos Requisitos}
+\label{tab:prioridades_requisitos}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Prioridade} & \textbf{Descrição} \\ \hline
+Essencial & É o requisito sem o qual o sistema não entra em funcionamento. Requisitos essenciais são requisitos imprescindíveis, que têm que ser implementados impreterivelmente. \\ \hline
+Importante & É o requisito sem o qual o sistema entra em funcionamento, mas de forma não satisfatória. Requisitos importantes devem ser implementados, mas, se não forem, o sistema poderá ser implantado e usado mesmo assim. \\ \hline
+Desejável & É o requisito que não compromete as funcionalidades básicas do sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. Requisitos desejáveis são requisitos que podem ser deixados para versões posteriores do sistema, caso não haja tempo hábil para implementá-los na versão que está sendo especificada. \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Descrição dos Requisitos}
+\label{sec:descricao_requisitos}
+
+\subsection{Requisitos Funcionais}
+
+{\small % Reduz o tamanho da fonte para economizar espaço
+\begin{longtable}{|>{\raggedright}p{2.5cm}|>{\raggedright}p{4cm}|p{6cm}|>{\raggedright}p{2cm}|}
+\caption{Tabela de Requisitos Funcionais}
+\label{tab:requisitos_funcionais}
+\hline
+\textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
+\hline
+\endfirsthead % Cabeçalho da primeira página
+\hline
+\textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
+\hline
+\endhead % Cabeçalho das páginas seguintes
+RF001 & Publicar Trabalhos Escritos & Permitir a publicação de artigos, relatórios de PIBIC, e-books e outras produções acadêmicas, organizados por categorias e tags. & Essencial \\
+\hline
+RF002 & Exibir Galeria de Imagens & Oferecer uma galeria de imagens relacionada aos sítios arqueológicos, com suporte para visualização ampliada. & Importante \\
+\hline
+RF003 & Baixar Modelos 3D & Oferecer a opção de download de modelos 3D do sítio arqueológico. & Essencial \\
+\hline
+RF004 & Ambiente Virtual para Download & Disponibilizar o arquivo executável do ambiente virtual desenvolvido na Unreal Engine para download pelos usuários. & Importante \\
+\hline
+RF005 & Compartilhar nas Redes Sociais & Permitir o compartilhamento de conteúdos e links diretamente nas redes sociais. & Desejável \\
+\hline
+RF006 & Buscar Trabalhos por Filtros & Oferecer um mecanismo de busca que permita filtrar trabalhos escritos por categorias e por sítios arqueológicos. & Essencial \\
+\hline
+RF007 & Formulário de Contato & Disponibilizar um formulário para que os usuários possam entrar em contato com os administradores do sistema. & Importante \\
+\hline
+RF008 & Autenticação de Usuário & Implementar autenticação de usuário, diferenciando permissões entre administradores e leitores. & Essencial \\
+\hline
+RF009 & Gerenciamento de Conteúdo & Permitir que administradores adicionem, editem ou removam postagens e outros conteúdos diretamente no sistema. & Essencial \\
+\hline
+RF010 & Alterar Estrutura do Site & Administradores devem poder modificar a estrutura do site, como layout e menus, sem a necessidade de programação. & Desejável \\
+\hline
+RF011 & Modo Escuro/Claro & Oferecer uma alternância entre modos escuro e claro para a interface. & Desejável \\
+\hline
+RF012 & Exibir Mapa dos Sítios Arqueológicos & Exibir mapas interativos, integrados ao Google Maps, para a localização dos sítios arqueológicos. & Importante \\
+\hline
+RF013 & Autenticação via Google & Permitir que usuários façam login utilizando suas contas Google para acessar áreas restritas. & Essencial \\
+\hline
+RF014 & Monitoramento de Acessos & Integrar ferramentas como Google Analytics para coletar dados sobre o número de acessos e comportamento dos usuários no site. & Importante \\
+\hline
+\end{longtable}
+} % Fim do ambiente \small
+
+\section{Requisitos Não Funcionais}
+
+{\small % Reduz o tamanho da fonte para economizar espaço
+\begin{longtable}{|>{\raggedright}p{2.5cm}|>{\raggedright}p{4cm}|p{6cm}|>{\raggedright}p{2cm}|}
+\caption{Tabela de Requisitos Não Funcionais}
+\label{tab:requisitos__nao_funcionais}
+\hline
+\textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
+\hline
+\endfirsthead % Cabeçalho da primeira página
+\hline
+\textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
+\hline
+\endhead % Cabeçalho das páginas seguintes
+RNF001 & Tempo de Carregamento & O sistema deve carregar as páginas em até 3 segundos em uma conexão de 5 Mbps. & Essencial \\
+\hline
+RNF002 & Performance Visível & As páginas principais devem exibir conteúdo visível para o usuário em até 1 segundo após o carregamento inicial. & Essencial \\
+\hline
+RNF003 & Escalabilidade & O sistema deve suportar um aumento de até 10 vezes no número de visitantes mensais sem comprometer o desempenho. & Importante \\
+\hline
+RNF004 & Manutenibilidade & O código do sistema deve ser modular e seguir boas práticas de desenvolvimento, facilitando atualizações e correções futuras. & Importante \\
+\hline
+RNF005 & Segurança & O sistema deve garantir a segurança dos dados por meio de HTTPS, além de implementar medidas contra ataques comuns, como XSS e CSRF. & Essencial \\
+\hline
+RNF006 & Acessibilidade & O site deve seguir as diretrizes WCAG 2.1 (nível AA), garantindo suporte a leitores de tela, navegação por teclado e contraste adequado. & Importante \\
+\hline
+RNF007 & Compatibilidade com Navegadores & O sistema deve ser compatível com os navegadores mais utilizados (Google Chrome, Firefox, Safari e Edge) em suas versões mais recentes. & Importante \\
+\hline
+RNF008 & Responsividade & O site deve ser responsivo, oferecendo uma experiência adequada em dispositivos móveis, tablets e desktops. & Essencial \\
+\hline
+RNF009 & Confiabilidade & O sistema deve ter uma disponibilidade mínima de 99,9\% mensal. & Essencial \\
+\hline
+RNF010 & Tolerância a Falhas & O sistema deve implementar backups automáticos diários para garantir a recuperação de dados em caso de falhas. & Importante \\
+\hline
+RNF011 & Custos Operacionais Reduzidos & O sistema deve ser projetado para funcionar com ferramentas e serviços gratuitos sempre que possível, reduzindo custos operacionais. & Desejável \\
+\hline
+RNF012 & SEO (Otimização para Motores de Busca) & O sistema deve ser otimizado para SEO, garantindo que o conteúdo seja facilmente encontrado em mecanismos de busca como Google. & Importante \\
+\hline
+RNF013 & Integração com Serviços Externos & O sistema deve permitir integração fluida com plataformas como Sanity (CMS), Google Maps, Flickr e Google Drive. & Essencial \\
+\hline
+\end{longtable}
+} % Fim do ambiente \small
+
 
 \section{Modelagem de Dados e Arquitetura}
 \label{sec:modelagem_arquitetura}
