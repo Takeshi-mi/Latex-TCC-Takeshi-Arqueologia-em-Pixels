@@ -1,78 +1,68 @@
 \chapter{Metodologia}
 \label{cap:metodologia}
 
-Este capítulo descreve a metodologia adotada para o desenvolvimento do presente trabalho, contemplando o tipo de pesquisa, as etapas de construção do artefato e as técnicas utilizadas. A fundamentação teórica baseia-se nos princípios da \textit{Design Science Research} (DSR), conforme proposto por \cite{gregor2013positioning} e , cuja abordagem propicia a criação de artefatos tecnológicos para solucionar problemas práticos e a contribuição para o conhecimento científico na área de Sistemas de Informação.
+O presente trabalho adota a metodologia \gls{dsr}, conforme descrita por \cite{peffers2007design}, que propõe um modelo estruturado para a construção e avaliação de artefatos tecnológicos. A \gls{dsr} é amplamente utilizada em pesquisas de computação e engenharia de software, pois permite a criação de soluções inovadoras baseadas em problemas reais \citep{horita2019design}.
 
-\section{Tipo de Pesquisa e Justificativa}
-\label{sec:tipo_pesquisa}
+\section{Fases da Design Science Research}
 
-Este estudo caracteriza-se como uma pesquisa aplicada, pois tem como objetivo resolver um problema real --- a necessidade de melhorar a divulgação e a preservação do sítio arqueológico Lapa da Pedra por meio de soluções digitais. A adoção da \textit{Design Science Research} é justificada pelo fato de que, além de propor um \textbf{artefato} (site JAMstack + ambiente virtual), busca-se avaliar e aperfeiçoar sua utilidade e eficácia, documentando todo o processo de desenvolvimento.
+\cite{peffers2007design} definem seis fases principais para a DSR:
 
-Segundo \cite{gregor2013positioning}, a DSR orienta-se pelas seguintes etapas: \textit{(i)} identificação do problema, \textit{(ii)} definição de objetivos, \textit{(iii)} desenho e desenvolvimento do artefato, \textit{(iv)} demonstração, \textit{(v)} avaliação e \textit{(vi)} comunicação. No presente projeto, essas etapas guiam as atividades desde a concepção do sistema até a sua verificação prática, garantindo rigor acadêmico e embasamento metodológico.
+\begin{enumerate}
+    \item \textbf{Identificação do Problema e Motivação}: Definição do problema e justificativa de sua relevância.
+    \item \textbf{Definição dos Objetivos da Solução}: Especificação do que a solução deve alcançar.
+    \item \textbf{Design e Desenvolvimento}: Construção do artefato proposto dividida em ciclos.
+    \item \textbf{Demonstração}: Aplicação da solução em um contexto real.
+    \item \textbf{Avaliação}: Verificação da eficácia da solução.
+    \item \textbf{Comunicação}: Divulgação dos resultados para a comunidade científica e profissionais da área.
+\end{enumerate}
 
-\section{Abordagem de Desenvolvimento}
-\label{sec:abordagem_desenvolvimento}
+\section{Adaptação para Cinco Fases}
 
-Para gerenciar o ciclo de desenvolvimento de software, optou-se pela abordagem \textbf{Kanban}, que utiliza quadros de tarefas divididas em colunas (\textit{A Fazer}, \textit{Em Andamento}, \textit{Concluído}). Essa metodologia traz flexibilidade, pois possibilita a priorização dinâmica das atividades, além de oferecer transparência quanto ao progresso do projeto.
+Neste trabalho, as fases da DSR foram adaptadas para um modelo de cinco etapas, de forma a organizar melhor o fluxo do projeto:
 
-O gerenciamento de tarefas foi realizado no \textit{Notion}, que permite a criação de quadros de Kanban, atribuição de responsáveis e monitoramento do andamento das entregas. Já o controle de versão do código seguiu o fluxo de \textit{pull requests} no \textit{GitHub}, incluindo revisões de código e resolução de conflitos. Essa combinação de ferramentas contribuiu para a organização do trabalho e para a manutenção da qualidade das entregas.
+\begin{enumerate}
+    \item \textbf{Identificação do Problema};
+    \item \textbf{Definição dos Objetivos da Solução};
+    \item \textbf{Design e Desenvolvimento};
+    \item \textbf{Avaliação};
+    \item \textbf{Comunicação}.
+\end{enumerate}
 
-\subsection{Cronograma de Atividades}
-\label{subsec:cronograma_atividades}
+Essa adaptação mantém a essência da DSR ao abranger a identificação do problema, definição dos objetivos, construção da solução, avaliação e comunicação dos resultados, garantindo uma abordagem estruturada e alinhada aos objetivos do projeto.
 
-A Tabela \ref{tab:cronograma} ilustra o cronograma geral do projeto, distribuído em marcos principais:
+\section{Fase 1: Identificação do Problema}\label{definicao_do_problema}
+O problema central foi a ineficácia do site antigo (Blogger) em divulgar e preservar o patrimônio arqueológico, devido a limitações técnicas, baixa usabilidade e identidade visual desatualizada. Tudo isso compromete o alcance e a experiência do usuário. Além disso, as abordagens tradicionais de divulgação digital, baseadas apenas em imagens e textos, não permitem uma exploração mais imersiva e interativa do patrimônio, reduzindo o engajamento e dificultando a compreensão espacial dos sítios arqueológicos. Portanto, objetiva-se a construção de um Ambiente Virtual 3D que possa ser baixado pelo site.
 
-\begin{table}[H]
-    \centering
-    \caption{Cronograma de desenvolvimento}
-    \label{tab:cronograma}
-    \begin{tabular}{p{4.3cm} p{3.5cm} p{7cm}}
-        \hline
-        \textbf{Fase} & \textbf{Período} & \textbf{Principais Entregas} \\
-        \hline
-        Coleta de Requisitos       & Semana 1-2 & Definição de requisitos funcionais e não funcionais \\
-        Modelagem de Dados         & Semana 2-3 & Diagrama conceitual de entidades e relacionamento \\
-        Prototipagem (Figma)       & Semana 3-4 & Criação de \textit{wireframes} e protótipos das telas \\
-        Implementação Web (Next.js + Sanity) & Semana 4-6 & Configuração do \textit{front-end}, rotas, integração com CMS \\
-        Fotogrametria (Captura de Imagens) & Semana 5-6 & Obtenção de fotos aéreas e terrestres, processamento no Reality Capture \\
-        Ambiente Virtual (Unreal)  & Semana 6-8 & Importação dos modelos 3D, criação de interações e configuração de iluminação \\
-        Testes e Avaliação         & Semana 8-9 & Aplicação de testes de usabilidade, performance e ajustes finais \\
-        Documentação e Conclusão   & Semana 9-10 & Finalização do TCC e revisão textual \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\section{Coleta de Requisitos}
-\label{sec:coleta_requisitos}
-
-A coleta de requisitos baseou-se na análise do \textit{blog} anterior (manuscrito pelo professor Edson Borges) e em entrevistas informais com professores e alunos do Instituto Federal de Goiás (IFG). O levantamento contemplou tanto requisitos funcionais quanto não funcionais, os quais direcionaram a estrutura do site e a implementação do ambiente virtual. Os requisitos funcionais incluem:
+Para validá-lo, realizou-se:
 
 \begin{itemize}
-    \item Publicar e organizar artigos, relatórios e materiais acadêmicos relacionados à arqueologia formosense;
-    \item Exibir galeria de imagens do sítio Lapa da Pedra;
-    \item Oferecer recurso de busca por categorias (e-book, publicação, relatório, etc.);
-    \item Disponibilizar modelos 3D para \textit{download} ou visualização \textit{online};
-    \item Acesso a um ambiente virtual imersivo para análise das pinturas rupestres.
+    \item \textbf{Visitas de campo}: Para coleta de imagens e informações sobre os sítios arqueológicos. Observou-se deterioração humana e natural, como pichações e erosão.
+    \item \textbf{Análise Heurística}: Baseada nas 10 heurísticas de Nielsen, identificando falhas críticas (ex: navegação confusa).
 \end{itemize}
 
-Já entre os requisitos não funcionais, destacam-se:
-\begin{itemize}
-    \item \textbf{Desempenho}: carregamento rápido em conexões padrão;
-    \item \textbf{Acessibilidade}: conformidade com normas WCAG 2.1 (nível AA);
-    \item \textbf{Segurança}: uso de HTTPS e prevenção contra ataques (XSS, CSRF);
-    \item \textbf{Escalabilidade}: possibilidade de adicionar novos sítios arqueológicos sem reestruturar todo o sistema.
-\end{itemize}
+\subsection{Visitas de Campo}
 
-\section{Identificação dos Requisitos}
+Detalhar as visitas, colocar fotos, descrever o que foi observado, etc.
+
+\subsection{Análise Heurística do Antigo Site}
+A análise heurística foi realizada no site antigo (Blogger) com base nas 10 heurísticas de Nielsen com o auxílio da ferramenta Heurio. A análise foi feita por quatro avaliadores: Naoki Rafael Miura, Victor Hugo Sales dos Reis, Sara Candido Fernandes e Erik Takeshi Miura, que identificaram problemas de usabilidade e navegabilidade.
+
+Mostrar print do Heurio, descrever os problemas encontrados, etc.
+
+\section{Fase 2: Definição dos Objetivos da Solução}\label{definicao_dos_objetivos_da_solucao}
+\subsection{Coleta de Requisitos}
+Coleta de requisitos foi realizada por meio de questionário online e entrevistas formais e informais com professores do IFG, resultando em 13 requisitos funcionais (Apêndice \ref{ap:requisitos-site-table}) e 13 não funcionais (Apêndice \ref{ap:requisitos-nao-funcionais-site-table}) para o site. Para o ambiente virtual há quatro requisitos funcionais (Apêndice \ref{ap:requisitos-ambiente-table}) e 2 requisitos não funcionais (Apêndice \ref{ap:requisitos-nao-funcionais-ambiente}). Todos os requisitos podem ser consultados no apêndice. 
+
+\subsubsection{Identificação dos Requisitos}
 \label{sec:identificacao_requisitos}
 
 Por convenção e para facilitar a identificação dos casos de uso junto aos contextos, a referência é feita de acordo com o esquema abaixo:
 
-\textbf{\[ Sigla de subseção | numeração\]}
+\textbf{Sigla de subseção | numeração}
 
-Os requisitos são identificados por uma sigla que representa a subseção (por exemplo, "RF" para Requisitos Funcionais, “RNF” para Requisitos Não Funcionais) seguida de um número sequencial.
+Os requisitos são identificados por uma sigla que representa a subseção (por exemplo, "RFS" para Requisitos Funcionais do site, “RNFA” para Requisitos Não Funcionais do Ambiente Virtual) seguida de um número sequencial.
 
-\section{Prioridades dos Requisitos}
+\subsubsection{Prioridades dos Requisitos}
 \label{sec:prioridades_requisitos}
 
 Para estabelecer a prioridade dos requisitos, foram adotadas as denominações: essencial, importante e desejável. Abaixo temos a descrição de significado de cada uma dessas denominações:
@@ -84,123 +74,131 @@ Para estabelecer a prioridade dos requisitos, foram adotadas as denominações: 
 \begin{tabular}{|l|p{10cm}|}
 \hline
 \textbf{Prioridade} & \textbf{Descrição} \\ \hline
-Essencial & É o requisito sem o qual o sistema não entra em funcionamento. Requisitos essenciais são requisitos imprescindíveis, que têm que ser implementados impreterivelmente. \\ \hline
-Importante & É o requisito sem o qual o sistema entra em funcionamento, mas de forma não satisfatória. Requisitos importantes devem ser implementados, mas, se não forem, o sistema poderá ser implantado e usado mesmo assim. \\ \hline
-Desejável & É o requisito que não compromete as funcionalidades básicas do sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. Requisitos desejáveis são requisitos que podem ser deixados para versões posteriores do sistema, caso não haja tempo hábil para implementá-los na versão que está sendo especificada. \\ \hline
+Essencial & Requisito sem o qual o sistema não entra em funcionamento. \\ \hline
+Importante & Requisito que, sem ele, o sistema entra em funcionamento, mas de forma não satisfatória. \\ \hline
+Desejável & Requisito que pode ser deixado para versões futuras sem comprometer as funcionalidades básicas. \\ \hline
 \end{tabular}
 \end{table}
 
-\section{Descrição dos Requisitos}
-\label{sec:descricao_requisitos}
-
-\subsection{Requisitos Funcionais}
-
-{\small % Reduz o tamanho da fonte para economizar espaço
-\begin{longtable}{|>{\raggedright}p{2.5cm}|>{\raggedright}p{4cm}|p{6cm}|>{\raggedright}p{2cm}|}
-\caption{Tabela de Requisitos Funcionais}
-\label{tab:requisitos_funcionais}
+\subsubsection{Requisitos Documentados}
+\label{sec:requisitos_documentados}
+{\small 
+\begin{longtable}{|p{2.5cm}|p{4cm}|p{6cm}|p{2cm}|}
+\caption{Exemplo da Tabela de Requisitos gerada}
+\label{table:exemplo_tabela_requisitos} \\
 \hline
 \textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
 \hline
-\endfirsthead % Cabeçalho da primeira página
+\endfirsthead
 \hline
 \textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
 \hline
-\endhead % Cabeçalho das páginas seguintes
-RF001 & Publicar Trabalhos Escritos & Permitir a publicação de artigos, relatórios de PIBIC, e-books e outras produções acadêmicas, organizados por categorias e tags. & Essencial \\
-\hline
-RF002 & Exibir Galeria de Imagens & Oferecer uma galeria de imagens relacionada aos sítios arqueológicos, com suporte para visualização ampliada. & Importante \\
-\hline
-RF003 & Baixar Modelos 3D & Oferecer a opção de download de modelos 3D do sítio arqueológico. & Essencial \\
-\hline
-RF004 & Ambiente Virtual para Download & Disponibilizar o arquivo executável do ambiente virtual desenvolvido na Unreal Engine para download pelos usuários. & Importante \\
-\hline
-RF005 & Compartilhar nas Redes Sociais & Permitir o compartilhamento de conteúdos e links diretamente nas redes sociais. & Desejável \\
-\hline
-RF006 & Buscar Trabalhos por Filtros & Oferecer um mecanismo de busca que permita filtrar trabalhos escritos por categorias e por sítios arqueológicos. & Essencial \\
-\hline
-RF007 & Formulário de Contato & Disponibilizar um formulário para que os usuários possam entrar em contato com os administradores do sistema. & Importante \\
-\hline
-RF008 & Autenticação de Usuário & Implementar autenticação de usuário, diferenciando permissões entre administradores e leitores. & Essencial \\
-\hline
-RF009 & Gerenciamento de Conteúdo & Permitir que administradores adicionem, editem ou removam postagens e outros conteúdos diretamente no sistema. & Essencial \\
-\hline
-RF010 & Alterar Estrutura do Site & Administradores devem poder modificar a estrutura do site, como layout e menus, sem a necessidade de programação. & Desejável \\
-\hline
-RF011 & Modo Escuro/Claro & Oferecer uma alternância entre modos escuro e claro para a interface. & Desejável \\
-\hline
-RF012 & Exibir Mapa dos Sítios Arqueológicos & Exibir mapas interativos, integrados ao Google Maps, para a localização dos sítios arqueológicos. & Importante \\
-\hline
-RF013 & Autenticação via Google & Permitir que usuários façam login utilizando suas contas Google para acessar áreas restritas. & Essencial \\
-\hline
-RF014 & Monitoramento de Acessos & Integrar ferramentas como Google Analytics para coletar dados sobre o número de acessos e comportamento dos usuários no site. & Importante \\
-\hline
+\endhead
+RFS001 & Exemplo de Nome & Exemplo de descrição do requisito & Essencial, Importante ou Desejável \\ \hline
 \end{longtable}
-} % Fim do ambiente \small
-
-\section{Requisitos Não Funcionais}
-
-{\small % Reduz o tamanho da fonte para economizar espaço
-\begin{longtable}{|>{\raggedright}p{2.5cm}|>{\raggedright}p{4cm}|p{6cm}|>{\raggedright}p{2cm}|}
-\caption{Tabela de Requisitos Não Funcionais}
-\label{tab:requisitos__nao_funcionais}
-\hline
-\textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
-\hline
-\endfirsthead % Cabeçalho da primeira página
-\hline
-\textbf{Identificador} & \textbf{Nome} & \textbf{Descrição} & \textbf{Prioridade} \\
-\hline
-\endhead % Cabeçalho das páginas seguintes
-RNF001 & Tempo de Carregamento & O sistema deve carregar as páginas em até 3 segundos em uma conexão de 5 Mbps. & Essencial \\
-\hline
-RNF002 & Performance Visível & As páginas principais devem exibir conteúdo visível para o usuário em até 1 segundo após o carregamento inicial. & Essencial \\
-\hline
-RNF003 & Escalabilidade & O sistema deve suportar um aumento de até 10 vezes no número de visitantes mensais sem comprometer o desempenho. & Importante \\
-\hline
-RNF004 & Manutenibilidade & O código do sistema deve ser modular e seguir boas práticas de desenvolvimento, facilitando atualizações e correções futuras. & Importante \\
-\hline
-RNF005 & Segurança & O sistema deve garantir a segurança dos dados por meio de HTTPS, além de implementar medidas contra ataques comuns, como XSS e CSRF. & Essencial \\
-\hline
-RNF006 & Acessibilidade & O site deve seguir as diretrizes WCAG 2.1 (nível AA), garantindo suporte a leitores de tela, navegação por teclado e contraste adequado. & Importante \\
-\hline
-RNF007 & Compatibilidade com Navegadores & O sistema deve ser compatível com os navegadores mais utilizados (Google Chrome, Firefox, Safari e Edge) em suas versões mais recentes. & Importante \\
-\hline
-RNF008 & Responsividade & O site deve ser responsivo, oferecendo uma experiência adequada em dispositivos móveis, tablets e desktops. & Essencial \\
-\hline
-RNF009 & Confiabilidade & O sistema deve ter uma disponibilidade mínima de 99,9\% mensal. & Essencial \\
-\hline
-RNF010 & Tolerância a Falhas & O sistema deve implementar backups automáticos diários para garantir a recuperação de dados em caso de falhas. & Importante \\
-\hline
-RNF011 & Custos Operacionais Reduzidos & O sistema deve ser projetado para funcionar com ferramentas e serviços gratuitos sempre que possível, reduzindo custos operacionais. & Desejável \\
-\hline
-RNF012 & SEO (Otimização para Motores de Busca) & O sistema deve ser otimizado para SEO, garantindo que o conteúdo seja facilmente encontrado em mecanismos de busca como Google. & Importante \\
-\hline
-RNF013 & Integração com Serviços Externos & O sistema deve permitir integração fluida com plataformas como Sanity (CMS), Google Maps, Flickr e Google Drive. & Essencial \\
-\hline
-\end{longtable}
-} % Fim do ambiente \small
+}
+Para acessar os requisitos gerados na íntegra, consulte o Apêndice \ref{apendice}.
 
 
-\section{Modelagem de Dados e Arquitetura}
-\label{sec:modelagem_arquitetura}
+\section{Fase 3: Design e Desenvolvimento}\label{sec: Fase 3 design e desenvolvimento}
+Após a identificação do problema \ref{definicao_do_problema} e a definição dos objetivos \ref{definicao_dos_objetivos_da_solucao} da solução, esta seção descreve o processo de design e desenvolvimento do projeto. Seguindo a abordagem da \gls{dsr}, conforme descrita por \cite{peffers2007design}, o desenvolvimento foi estruturado em ciclos iterativos, permitindo refinamento contínuo dos artefatos conforme novas descobertas e avaliações eram feitas.
+Neste projeto, os ciclos foram organizados de forma a contemplar as principais etapas do desenvolvimento da solução:
 
-Uma vez elucidados os requisitos, elaborou-se um diagrama conceitual para compreender as principais entidades e seus relacionamentos, mesmo com a adoção de um CMS \textit{headless} (Sanity), que opera em arquitetura NoSQL. Tal diagrama contribui para a organização lógica de documentos (p. ex., “Artigo”, “Sítio Arqueológico”, “Galeria de Imagens”) e facilita a manutenção do conteúdo ao longo do tempo.
+% Ciclo 1
+\subsection*{Ciclo 1: Fotogrametria e Construção do Modelo 3D} \label{subsec:ciclo1}
 
-Optou-se pela \textbf{arquitetura JAMstack} (JavaScript, APIs e Markup), na qual o \textit{frontend} em \textbf{Next.js} se comunica com o CMS \textbf{Sanity}, enquanto grandes arquivos (modelos 3D, fotos) são hospedados em serviços externos, como Flickr e Google Drive. O \textit{deploy} do site foi realizado na \textbf{Vercel}, explorando a geração de páginas estáticas (SSG) para maior desempenho.
+\subsubsection*{Objetivo do Ciclo}
+Criar um modelo 3D detalhado baseado em imagens capturadas em campo. Atender ao RFA001 (Modelo 3D de Alta Qualidade) e garantir compatibilidade com Unreal Engine 5.4. 
 
-\section{Critérios de Avaliação}
-\label{sec:criterios_avaliacao}
-
-Estabeleceram-se, por fim, os critérios e as métricas de avaliação do artefato:
-
+\subsubsection*{Ações Realizadas}
 \begin{enumerate}
-    \item \textbf{Usabilidade}: verificação das \textit{heurísticas de Nielsen e Kaniasty} por meio da ferramenta \textit{Heurio}, coleta de feedback de usuários e tempo médio para realizar tarefas;
-    \item \textbf{Desempenho}: medição do tempo de carregamento com o Google Lighthouse, bem como análise de responsividade em diferentes dispositivos;
-    \item \textbf{Qualidade do Modelo 3D e Ambiente Virtual}: verificação da fidelidade das texturas, fluidez de navegação e experiência imersiva;
-    \item \textbf{Acessibilidade}: checagem dos requisitos WCAG 2.1 (nível AA), como contraste de cores e navegação por teclado.
+    \item Captura de imagens de alta resolução de diferentes ângulos do sítio da Lapa da Pedra e seleção para remover fotos com ruídos.
+    \item Processamento no Reality Capture para reconstrução fotogramétrica, resultando em um modelo inicial com 102 milhões de polígonos.
+    \item Simplificação do modelo para 5 milhões de polígonos, garantindo compatibilidade com a Unreal Engine (RFA001).
+    \item Reprojeção de textura do modelo de alta resolução para o modelo simplificado, mantendo a qualidade visual.
 \end{enumerate}
 
-Os resultados desses testes e avaliações serão discutidos no Capítulo \ref{resultados}, demonstrando se os objetivos propostos foram atendidos e em que medida o artefato se mostra eficaz na divulgação e preservação do sítio Lapa da Pedra.
+\textbf{Resultado}: Modelo 3D detalhado e otimizado para uso no ambiente virtual, garantindo fidelidade visual e desempenho adequado na Unreal Engine 5.4 (RFA001).
 
-\noindent\rule{12cm}{0.4pt}
+% Ciclo 2
+\subsection*{Ciclo 2: Construção do Ambiente Virtual na Unreal Engine 5.4} \label{subsec:ciclo2}
+
+\subsubsection*{Objetivo do Ciclo}
+Atender aos requisitos RFA002 (Navegação em Terceira Pessoa), RFA003 (Alternância de Câmera), RFA004 (Avatar Personalizado), RNFA001 (Compatibilidade com Windows), RNFA002 (Documentação de Instalação) e RNFA003 (Instalação Simplificada).
+
+\subsubsection*{Ações Realizadas}
+\begin{enumerate}
+    \item Importação do modelo 3D otimizado na Unreal Engine 5.4.
+    \item Criação do cenário virtual com texturas realistas e iluminação dinâmica.
+    \item Implementação do sistema de navegação em terceira pessoa com controle de um avatar interativo (RFA002).
+    \item Criação de um avatar personalizado no Metahuman com aparência semelhante ao professor Edson Borges (RFA004).
+    \item Desenvolvimento de um sistema de alternância de câmera, permitindo troca entre visão em primeira e terceira pessoa (RFA003).
+    \item Configuração de otimizações gráficas para garantir um bom desempenho em máquinas com Windows 10 ou superior (RNFA001).
+    \item Empacotamento do ambiente virtual em um arquivo executável (.exe) para distribuição, garantindo instalação simplificada para usuários finais (RNFA003).
+    \item Desenvolvimento de um guia de instalação e configuração para orientar os usuários na utilização do ambiente virtual (RNFA002).
+\end{enumerate}
+
+\textbf{Resultado}: Ambiente virtual interativo e otimizado, permitindo exploração em terceira pessoa com opção de alternância para visão em primeira pessoa, avatar personalizado, compatibilidade com Windows 10+ e um instalador simplificado para facilitar a distribuição e configuração pelos usuários finais (RFA002, RFA003, RFA004, RNFA001, RNFA002, RNFA003).
+
+% Ciclo 3
+\subsection*{Ciclo 3: Prototipação do Novo Site} \label{subsec:ciclo3}
+
+\subsubsection*{Objetivo do Ciclo}
+Atender aos requisitos RNFS006 (Acessibilidade), RNFS008 (Responsividade) e RNFS014 (Usabilidade).
+
+\subsubsection*{Ações Realizadas}
+\begin{enumerate}
+    \item Análise das referências e inspirações enviadas pelo professor Edson Borges por meio de um questionário, garantindo alinhamento com suas expectativas e visão para o site.
+    \item Reorganização da arquitetura da informação, agrupando conteúdos relevantes, reduzindo informações desnecessárias e minimizando a quantidade de cliques para que o usuário encontrasse a informação desejada (RF006, RNFS014).
+    \item Criação de wireframes para estruturar a interface e definir a disposição dos elementos visuais e interativos do site.
+    \item Definição da paleta de cores e tipografia, garantindo coerência visual e acessibilidade (RNFS006, RNFS014).
+    \item Criação de uma nova logo, inspirada nas cores das artes rupestres encontradas na Lapa da Pedra, reforçando a identidade visual do projeto.
+    \item Desenvolvimento de um protótipo de alta fidelidade no Figma, representando a versão final do site com design refinado (RF002, RF006, RNFS014).
+    \item Validação e refinamento do protótipo a partir de feedbacks coletados com o professor e colegas, garantindo alinhamento com as necessidades do projeto e uma experiência de usuário otimizada.
+    \item Organização eficiente do projeto no Figma garantindo um ambiente estruturado e facilitando futuras iterações e implementações.
+\end{enumerate}
+
+\textbf{Resultado}: Protótipo de alta fidelidade bem estruturado e validado, garantindo acessibilidade, melhor navegação, identidade visual consistente e um layout flexível para futuras alterações e desenvolvimento (RNFS006, RNFS008, RNFS014).
+% 4
+\subsection*{Ciclo 4: Desenvolvimento do Novo Site} \label{subsec:ciclo4}
+
+\subsubsection*{Objetivo do Ciclo}
+Atender aos requisitos funcionais e não funcionais do site. O desenvolvimento abrange a maioria dos requisitos especificados nas tabelas \ref{ap:requisitos-site-table} e \ref{ap:requisitos-nao-funcionais-site-table}, garantindo acessibilidade, responsividade, gerenciamento dinâmico de conteúdo e otimização de desempenho.
+
+\subsubsection*{Ações Realizadas}
+\begin{enumerate}
+\item \textbf{Configuração do ambiente de desenvolvimento}: Definição da arquitetura \textit{JAMstack}, utilizando o \textit{framework} \textit{Next.js} e a biblioteca \textit{Schema UI} no \textit{frontend} e \textit{Sanity} como CMS headless, além da configuração do repositório no Git e escolha da hospedagem na Vercel para otimização de desempenho e redução de custos (RNFS001, RNFS008, RNFS011).
+
+    
+    \item \textbf{Implementação da estrutura e funcionalidades do site}
+    \begin{enumerate}
+        \item Implementação de páginas-chave:
+        \begin{enumerate}
+            \item Página inicial com navegação hierárquica
+            \item Seções específicas para sítios arqueológicos
+            \item Página de Contato
+            \item Página de trabalhos escritos com filtros
+        \end{enumerate}
+    \end{enumerate}
+    
+\end{enumerate}
+
+\section{Fase 4: Avaliação} \label{sec:avaliacao-dsr}
+
+    \textbf{Validação Técnica}
+    \begin{enumerate}
+        \item Testes de performance com Lighthouse;
+        \item Verificação de compatibilidade em 6 navegadores diferentes;
+        \item Avaliação heurística do novo site e \textit{feedbacks}.
+    \end{enumerate}
+    
+
+\section{Fase 5: Comunicação} \label{sec:comunicacao-dsr}
+
+Os resultados foram divulgados através de:
+\begin{itemize}
+    \item \textbf{Documentação Acadêmica}: Este TCC
+    \item \textbf{Publicação Online}: Site em \url{https://arqueologiaformosa.com.br}.
+\end{itemize}
+
+

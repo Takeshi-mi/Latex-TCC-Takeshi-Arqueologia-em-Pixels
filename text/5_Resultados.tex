@@ -5,7 +5,7 @@
 Este capítulo apresenta os resultados obtidos com o desenvolvimento do site e do ambiente virtual, correlacionando-os diretamente aos objetivos estabelecidos no início deste trabalho. Demonstra-se como cada objetivo foi atendido, com destaque para as melhorias implementadas em relação ao estado anterior do site e a criação de um ambiente virtual \gls{3d} interativo para a divulgação e preservação da arte rupestre.
 
 \section{Objetivo Geral}
-O objetivo geral deste trabalho foi desenvolver uma plataforma web e um ambiente virtual \gls{3d} que promovam a preservação, divulgação e acesso educativo à arte rupestre da Lapa da Pedra. Esse objetivo foi atingido por meio da entrega de:
+O objetivo geral deste trabalho é desenvolver uma plataforma web e um ambiente virtual \gls{3d} que permitam a preservação, divulgação e o acesso à arte rupestre da Lapa da Pedra. Esse projeto busca oferecer uma experiência interativa para educadores, pesquisadores e o público em geral, promovendo a conscientização sobre a importância desses registros culturais. Esse objetivo foi atingido por meio da entrega de:
 \begin{itemize}
     \item Um novo site moderno, acessível e responsivo, que organiza as informações de forma clara e permite fácil navegação.
     \item Um ambiente virtual interativo que possibilita a visualização detalhada das pinturas rupestres e oferece uma experiência imersiva aos usuários.
@@ -39,12 +39,13 @@ A Figura \ref{fig:site_homepage} apresenta a página inicial do novo site, evide
 
 \begin{figure}[H]
     \centering
-    % Substitua pelo caminho do arquivo de imagem
-    \includegraphics[width=0.8\linewidth]{images/site_homepage.png}
-    \caption{Página inicial do novo site "Arqueologia Formosa".}
+    \includegraphics[height=6cm, keepaspectratio]{img/site/hero1.png}
+    \caption{Página inicial do novo site "Arqueologia Formosa". \\
+    \textbf{Fonte:} Elaborado pelo autor.}
     \label{fig:site_homepage}
 \end{figure}
 
+As demais páginas podem ser vista no Apêndice \ref{ap:páginas_do_site} e no site publicado na internet, acessível por meio do endereço \url{www.arqueologiaformosa.com.br}.
 \subsection{Implementação de um Ambiente Virtual \gls{3d}}
 Outro objetivo específico era implementar um ambiente virtual \gls{3d} que permitisse a visualização interativa da arte rupestre. Esse objetivo foi alcançado com o desenvolvimento de um ambiente imersivo na Unreal Engine, utilizando modelos \gls{3d} gerados por fotogrametria. Os resultados incluem:
 \begin{itemize}
@@ -67,7 +68,7 @@ A Figura \ref{fig:virtual_environment} apresenta uma visão do ambiente virtual 
 \section{Testes e Validação}
 
 \subsection{Usabilidade}
-Os testes de usabilidade foram realizados com base nas heurísticas de Nielsen e Kaniasty. Os seguintes pontos foram avaliados:
+Os testes de usabilidade foram realizados com base nas heurísticas de Nielsen. Os seguintes pontos foram avaliados:
 \begin{itemize}
     \item Facilidade de navegação no site e no ambiente virtual.
     \item Eficiência na interação com a galeria de imagens e o ambiente virtual.
@@ -89,12 +90,20 @@ Design e Funcionalidades    & 4.8/5                   & Alta satisfação com o 
 \end{table}
 
 \subsection{Desempenho}
-Os testes de desempenho foram realizados com o Google Lighthouse e ferramentas como GTmetrix. Abaixo estão os principais resultados:
+Os testes de desempenho foram realizados com o Google Lighthouse. Abaixo estão os principais resultados:
 \begin{itemize}
     \item Tempo de carregamento médio: 2.3 segundos.
-    \item Pontuação em SEO: 92/100.
+    \item Pontuação em SEO: 100/100.
     \item Responsividade: 100\% em dispositivos móveis e desktops.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm, keepaspectratio]{img/site/lighthouse_only.png}
+    \caption{nálise de desempenho do site Arqueologia Formosa pela ferramenta \textit{Lighthouse}. \\
+    \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:site_homepage}
+\end{figure}
 
 \subsection{Acessibilidade}
 Conformidade com as diretrizes WCAG 2.1:
