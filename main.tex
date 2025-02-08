@@ -79,7 +79,6 @@
 \usepackage{lipsum}
 \usepackage{sectsty}
 \usepackage{lastpage}
-\usepackage{float}
 \usepackage{media9}
 \usepackage{animate}
 \usepackage{xparse} % Para criar comandos personalizados
@@ -89,7 +88,9 @@
 \usepackage{array} % Para formatação de colunas
 \usepackage{longtable} % Para tabelas que ocupam várias páginas
 \usepackage{ltablex} % Combina longtable e tabularx
-
+\usepackage{graphicx} % Para incluir imagens
+\usepackage{float}    % Para usar [H] nas figuras
+\usepackage[numbers]{natbib} % Para usar \citep
 \makeglossaries
 % Comando personalizado
 \NewDocumentCommand{\glsboth}{m}{%
@@ -97,7 +98,7 @@
     \glsadd{#1-gloss} % Adiciona a entrada correspondente no glossário
 }
 \input{text/acronimos}
-\input{text/glossario}
+% \input{text/glossario}
 
 
 % Configuração de legendas
@@ -134,11 +135,11 @@
 
 % Título e autores
 \title{
-ARQUEOLOGIA EM PIXELS:
-Plataforma Web e Virtualização Imersiva para 
+ARQUEOLOGIA FORMOSA:
+Plataforma Web e Ambiente Virtual Imersivo para 
 Preservação da Arte Rupestre Formosense 
 }
-\date{2024}
+\date{2025}
 \author{Erik Takeshi Miura}
 \adviser{Prof. Me. Afrânio Furtado de Oliveira Neto}
 \coadviser{Prof. Dr. Edson Rodrigues Borges}
@@ -165,12 +166,11 @@ Tudo o que fizeres, fazei com excelência.
 
 % Agradecimentos
 \acknowledgements
-% \input{text/agradecimentos}
+\input{text/agradecimentos}
 
 % \begin{epigraph}[]{Márcio de Deus}
 % When one finds a hard problem, the more complicated it is, the more one ought to work towards enlightening it's solution.
 % \end{epigraph}
-\input{text/agradecimentos}
 
 % Resumo e Abstract
 \resumo

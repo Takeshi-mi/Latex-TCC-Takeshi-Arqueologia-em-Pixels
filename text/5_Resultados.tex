@@ -15,6 +15,7 @@ O objetivo geral deste trabalho é desenvolver uma plataforma web e um ambiente 
 As seções a seguir detalham como os objetivos específicos foram atendidos.
 
 \section{Objetivos Específicos}
+Nesta seção cada objetivo específico, definidos na \ref{Introducao}, será explorado detalhadamente demonstrando os resultados obtidos. 
 
 \subsection{Análise Heurística de Usabilidade: Problemas Identificados no Site Antigo}
 Um dos objetivos específicos era realizar uma análise heurística de usabilidade do antigo site "Arqueologia Formosa". Essa análise foi conduzida com base nas heurísticas de Nielsen, avaliando aspectos como navegabilidade, eficiência e consistência. Os principais problemas identificados foram:
@@ -49,8 +50,9 @@ As demais páginas podem ser vista no Apêndice \ref{ap:páginas_do_site} e no s
 \subsection{Implementação de um Ambiente Virtual \gls{3d}}
 Outro objetivo específico era implementar um ambiente virtual \gls{3d} que permitisse a visualização interativa da arte rupestre. Esse objetivo foi alcançado com o desenvolvimento de um ambiente imersivo na Unreal Engine, utilizando modelos \gls{3d} gerados por fotogrametria. Os resultados incluem:
 \begin{itemize}
-    \item Fidelidade visual dos modelos \gls{3d}, com texturas realistas das pinturas rupestres.
-    \item Navegação interativa no ambiente, permitindo aos usuários explorar o sítio arqueológico.
+    \item Fidelidade visual dos modelos \gls{3d} gerados por fotogrametria, com texturas realistas das pinturas rupestres;
+    \item Navegação interativa no ambiente, permitindo aos usuários explorar o sítio arqueológico em primeira e terceira pessoa;
+    \item Avatar personalizado baseado no professor Edson Borges;
     \item Empacotamento do ambiente virtual em um arquivo executável, disponibilizado para \textit{download} no site.
 \end{itemize}
 
@@ -59,7 +61,7 @@ A Figura \ref{fig:virtual_environment} apresenta uma visão do ambiente virtual 
 \begin{figure}[H]
     \centering
     % Substitua pelo caminho do arquivo de imagem
-    \includegraphics[width=0.8\linewidth]{images/virtual_environment.png}
+    \includegraphics[width=0.8\linewidth]{img/unreal/mapa.png}
     \caption{Ambiente virtual desenvolvido na Unreal Engine.}
     \label{fig:virtual_environment}
 \end{figure}
@@ -90,28 +92,47 @@ Design e Funcionalidades    & 4.8/5                   & Alta satisfação com o 
 \end{table}
 
 \subsection{Desempenho}
-Os testes de desempenho foram realizados com o Google Lighthouse. Abaixo estão os principais resultados:
+Os testes de desempenho foram realizados com o \textit{Google Lighthouse}. Abaixo estão os principais resultados:
 \begin{itemize}
-    \item Tempo de carregamento médio: 2.3 segundos.
+    \item Tempo de carregamento médio: 1 segundo.
+    \item Tempo até o primeiro conteúdo visível aparecer: 0,8 segundos.
     \item Pontuação em SEO: 100/100.
-    \item Responsividade: 100\% em dispositivos móveis e desktops.
+    \item Pontuação em Desempenho: 95/100.
+    \item Responsividade: Boa responsividade em dispositivos móveis e desktops.
+\end{itemize}
+
+As Figuras \ref{fig:lighthouse} e \ref{fig:tempocarregamento} mostram capturas de tela dos testes realizados com a ferramenta \textit{Google Lighthouse}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm, keepaspectratio]{img/site/lighthouse_only.png}
+    \caption{Análise de desempenho do site Arqueologia Formosa pela ferramenta \textit{Lighthouse}. \\
+    \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:lighthouse}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm, keepaspectratio]{img/site/tempo_de_carregamento.png}
+    \caption{Tempo de carregamento da página medido pelo \textit{Lighthouse}. \\
+    \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:tempocarregamento}
+\end{figure}
+
+\subsection{Acessibilidade}
+O site final seguiu as regras de conformidade com as diretrizes WCAG 2.1, e foram medidas com testes de usabilidade e teste de contraste feitas no site \href{https://dequeuniversity.com/rules/axe/4.10/color-contrast}{\textit{Deque University - Color Contrast}}.
+\begin{itemize}
+    \item Contraste adequado para textos e botões (Figura \ref{fig:testecontraste}).
+    \item Navegação por teclado funcionando corretamente.
+    \item Compatibilidade com leitores de tela.
 \end{itemize}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=6cm, keepaspectratio]{img/site/lighthouse_only.png}
-    \caption{nálise de desempenho do site Arqueologia Formosa pela ferramenta \textit{Lighthouse}. \\
+    \includegraphics[height=6cm, keepaspectratio]{img/site/contraste.png}
+    \caption{Teste de constraste de acordo com o \\ padrão WCAG medido pela ferramenta de contraste da \href{https://dequeuniversity.com/rules/axe/4.10/color-contrast}{\textit{Deque University}}. \\
     \textbf{Fonte:} Elaborado pelo autor.}
-    \label{fig:site_homepage}
+    \label{fig:testeconstraste}
 \end{figure}
-
-\subsection{Acessibilidade}
-Conformidade com as diretrizes WCAG 2.1:
-\begin{itemize}
-    \item Contraste adequado para textos e botões.
-    \item Navegação por teclado funcionando corretamente.
-    \item Compatibilidade com leitores de tela.
-\end{itemize}
 
 
 \section{Conclusão do Capítulo}

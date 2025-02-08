@@ -17,9 +17,9 @@ Existem dois principais tipos de arte rupestre:
 \end{itemize}
 A arte rupestre, presente em diversas partes do mundo, representa uma das formas mais antigas de expressão humana, oferecendo informações valiosas sobre as culturas que as produziram (MARQUES, 2016).
 
-\subsection {Sítio Arqueológico Lapa da Pedra}
-O Sítio Arqueológico Lapa da Pedra, conforme mostrado na Figura \ref{fig:Entrada da Gruta IV,Toca da Onça}, é conhecido popularmente como Toca da Onça. Em 1984, Pedro Ignácio Schmitz e Altair Sales Barbosa realizaram pesquisas que culminaram na identificação e catalogação de 29 pequenas grutas na região de Formosa, Goiás. Essas grutas abrigavam pinturas rupestres e serviram como moradia para os primeiros habitantes do cerrado (BARBOSA et al., 1984, 1993).
-Dentre as 29 grutas, a Gruta catalogada por Schmitz como IV–GO-EC-002 (04), se destaca pela maior concentração de pictoglifos e, portanto, \textbf{foi o foco da virtualização neste trabalho}. Localizada a cerca de 12 km da cidade de Formosa, a Gruta 04 consiste em uma passagem de duzentos metros abaixo de uma enorme pedra calcária, situada na fazenda Pedra. Esse sítio, semelhante a outros em Goiás e no noroeste de Minas Gerais, apresenta uma grande diversidade de temas na arte rupestre, datando de aproximadamente 4.560 a.C. (SCHMITZ, 1990).
+\subsection {Sítio Arqueológico Lapa da Pedra}\label{sec:sitio lapa da pedra}
+O Sítio Arqueológico Lapa da Pedra, mostrado na Figura \ref{fig:Entrada da Gruta IV,Toca da Onça}, é conhecido popularmente como Toca da Onça fica localizado em uma fazenda de propriedade privada a nordeste de Formosa, chamada fazenda Pedra. Na Figura \ref{fig:mapa} pode-se observar o mapa e o caminho percorrido. Em 1984, Pedro Ignácio Schmitz e Altair Sales Barbosa realizaram pesquisas que culminaram na identificação e catalogação de 29 pequenas grutas na região de Formosa, Goiás. Essas grutas abrigavam pinturas rupestres e serviram como moradia para os primeiros habitantes do cerrado (BARBOSA et al., 1984, 1993). 
+Dentre as 29 grutas, a Gruta catalogada por Schmitz como IV–GO-EC-002 (04), se destaca pela maior concentração de pictoglifos e, portanto, foi o foco da virtualização neste trabalho. Localizada a cerca de 12 km da cidade de Formosa, a Gruta 04 consiste em uma passagem de duzentos metros abaixo de uma enorme pedra calcária, situada na fazenda Pedra. Esse sítio, semelhante a outros em Goiás e no noroeste de Minas Gerais, apresenta uma grande diversidade de temas na arte rupestre, datando de aproximadamente 4.560 a.C. (SCHMITZ, 1990).
 
 
 \begin{figure}[H]
@@ -30,10 +30,17 @@ Dentre as 29 grutas, a Gruta catalogada por Schmitz como IV–GO-EC-002 (04), se
     \label{fig:Entrada da Gruta IV,Toca da Onça}
 \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/Visitas tecnicas/mapa.png}
+    \caption{ Diagrama em cima da captura de tela do Google Earth \\ na localização das grutas da Lapa da Pedra. Captura de tela realizada em junho de 2024 \\
+        \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:mapa}
+\end{figure}
 
 
-\subsection{Ameaças à Preservação da Arte Rupestre: Deteriorização e Ação Antrópica}
-A arte rupestre, como patrimônio cultural de valor \textbf{inestimável}, enfrenta diversos desafios para sua preservação. A ação do tempo e as condições climáticas, como a umidade, a luz, o calor e o vento, contribuem para a deterioração natural das pinturas e superfícies rochosas.
+\subsection{Ameaças à Preservação da Arte Rupestre: Deteriorização e Ação Antrópica}\label{sec:amecas a preservação}
+A arte rupestre, como patrimônio cultural de valor inestimável, enfrenta diversos desafios para sua preservação. A ação do tempo e as condições climáticas, como a umidade, a luz, o calor e o vento, contribuem para a deterioração natural das pinturas e superfícies rochosas.
 Na Toca da Onça,  não bate sol dentro da gruta, contribuindo para a preservação do estado dos desenhos. Contudo, ainda se observam fatores de deterioração natural: descamação da tinta, infiltrações, fissuras nas rochas.
 
 
@@ -61,7 +68,7 @@ Dar exemplos de como o patrimônio virtual tem sido usado para preservar sítios
 
 
 
-\section{Fotogrametria e Modelagem 3D}
+\section{Fotogrametria e Modelagem 3D}\label{sec:fotogrametria e modelagem 3D}
 Para construção de um Patrimônio Virtual com qualidade é preciso construir modelos 3D fidedignos a realidade e para isso existe uma técnica muito utilizada chamada fotogrametria.
 A fotogrametria, deriva das raízes gregas “photós” (luz), “gramma” (desenhado ou escrito) e “metria” (medição). Logo, fotogrametria etimologicamente significa “medições gráficas por meio da luz" (Paredes, 1987). A American Society for Photogrammetry and Remote Sensing (ASPRS), em seu livro The Manual of Photogrammetry (2003), define fotogrametria como “a arte, ciência e tecnologia de obter informações confiáveis sobre objetos físicos e o ambiente por meio de processos de registro, medição e interpretação de imagens fotográficas e padrões de energia radiante eletromagnética (EM) e outros fenômenos.”
 Historicamente, a fotogrametria  teve seu desenvolvimento intrinsecamente ligado à evolução da fotografia, da óptica e da geometria, culminando em uma ferramenta crucial para diversos campos do conhecimento. No Brasil, sua história acompanha de perto a evolução global, com momentos de pioneirismo e adaptação às demandas nacionais (Silva, 2015).
@@ -78,21 +85,7 @@ A fotogrametria automatizada, comumente empregada na geração de modelos 3D de 
 A \textit{Unreal Engine}, desenvolvida pela\textit{ Epic Games}, se destaca como uma \textit{engine} de jogos de última geração, amplamente utilizada na indústria de jogos e simulações, e reconhecida por sua capacidade de criar experiências visuais de alta qualidade e interativas.  A \textit{Unreal Engine} oferece um conjunto robusto de ferramentas para modelagem 3D, animação, física, renderização, iluminação, realidade virtual e muito mais. Sua arquitetura flexível e código-fonte aberto permitem que os desenvolvedores personalizem e estendam a \textit{engine} para atender às necessidades específicas de seus projetos, tornando-a uma escolha popular tanto para grandes estúdios quanto para desenvolvedores independentes.
 
 No âmbito do Patrimônio Virtual, a \textit{Unreal Engine} se torna uma ferramenta poderosa para a criação de reconstruções digitais imersivas e interativas de sítios arqueológicos, monumentos e artefatos históricos. A \textit{engine} permite a modelagem 3D realista, a aplicação de texturas detalhadas e a simulação precisa de iluminação, proporcionando aos usuários uma experiência virtual imersiva e próxima da realidade. A capacidade de integrar elementos interativos, como navegação em primeira pessoa, animações e informações contextuais, enriquece ainda mais a experiência, tornando a \textit{Unreal Engine} uma escolha estratégica para projetos que buscam aproximar o público do patrimônio cultural.
-\begin{figure}[H]
-    \centering
-    \includegraphics[height=6cm, keepaspectratio]{img/unreal-print.png}
-    \caption{Calma Afrânio, eu vou pensar num nome e pegar uma foto melhor \\
-    \textbf{Fonte:} Elaborado pelo autor.}
-    \label{fig:unreal-print}
-\end{figure}
-To colocando aqui só pra deixar a estrutura pronta e lembrar de colocar imagem.
-Quanto mais imagem, mais rico o trabalho fica. Com a estrutura feita, depois é só eu trocar o arquivo.
-\begin{figure}[H]
-    \centering
-    \includegraphics[height=8cm, keepaspectratio]{img/unreal-print2.png}
-    \caption{UnrealEngine.}
-    \label{fig:unreal-print2}
-\end{figure}
+
 \subsection{RealityCapture e Integração com Unreal Engine}
 O \textbf{RealityCapture}, desenvolvido pela CapturingReality e adquirido pela Epic Games, é amplamente utilizado para a criação de modelos 3D altamente detalhados a partir de técnicas de fotogrametria. Uma das principais vantagens do RealityCapture é sua integração nativa com a Unreal Engine, também desenvolvida pela Epic Games. Essa compatibilidade facilita a exportação de modelos 3D para a Unreal Engine, onde podem ser utilizados na criação de ambientes virtuais realistas, como em jogos, simulações ou experiências de realidade virtual (VR) \citep{EpicGamesDocs}.
 
@@ -104,9 +97,9 @@ O \textit{MetaHuman Creator} permite a geração e personalização de rostos e 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=8cm, keepaspectratio]{img/Metahuman.png}
-    \caption{Captura de tela do MetaHuman creator. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+    \includegraphics[height=8cm, keepaspectratio]{img/unreal/metahuman create.jpg}
+    \caption{Editor da Plataforma MetaHuman \\
+        \textbf{Fonte:} \href{https://cdn2.unrealengine.com/metahuman-overview-create-1920x1080-baa630fe8b02.jpg?resize=1&w=900}{Unreal Engine - MetaHumans},  \protect\citep{unrealenginemeta}}
     \label{fig:metahuman creator}
 \end{figure}
 
@@ -115,7 +108,7 @@ Um aspecto fundamental para a integração convincente de Metahumans em ambiente
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/skeleton.png}
-    \caption{Esqueleto digital.\\
+    \caption{Captura de tela do Esqueleto digital \\de um avatar na Unreal Engine.\\
         \textbf{Fonte:} Elaborado pelo autor.}
     \label{fig:skeleton}
 \end{figure}
@@ -123,7 +116,7 @@ Um aspecto fundamental para a integração convincente de Metahumans em ambiente
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm, keepaspectratio]{gif/animacoes/feature_body_motion-0000.jpg}
-    \caption{ Print do pacote de animações Unreal.\\
+    \caption{ Captura de tela do pacote de animações Unreal.\\
         \textbf{Fonte:} Elaborado pelo autor.}
     \label{fig:animacoes}
 \end{figure}
@@ -134,30 +127,23 @@ A Figura \ref{fig:metahumanEdson} ilustra a aplicação da tecnologia MetaHuman 
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Metahuman.png}
-    \caption{MetaHuman do professor Edson. \\
+    \caption{Criação do Avatar Digital do professor Edson Borges. \\
         \textbf{Fonte:} Elaborado pelo autor.}
     \label{fig:metahumanEdson}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[height=8cm, keepaspectratio]{img/unreal/metahuman create.jpg}
-    \caption{Editor da Plataforma MetaHuman \\
-        \textbf{Fonte:} \href{https://cdn2.unrealengine.com/metahuman-overview-create-1920x1080-baa630fe8b02.jpg?resize=1&w=900}{Unreal Engine - MetaHumans}, 2025}
-    \label{fig:metahumanCreator}
-\end{figure}
-\cite{unrealengine}
+
 
 A capacidade de gerar personagens virtuais realistas e personalizáveis, combinada com a possibilidade de animá-los de forma natural e convincente, torna os Metahumans uma ferramenta poderosa para a criação de experiências imersivas e envolventes no campo do Patrimônio Virtual. A presença de personagens virtuais humanoides pode contribuir significativamente para a comunicação de narrativas históricas.
 
 \section{Engenharia de Software}
-\subsection{Modelos de Processo}
-Discutir diferentes modelos de processo de desenvolvimento de software, como Cascata, Agile, etc.
+% \subsection{Modelos de Processo}
+% Discutir diferentes modelos de processo de desenvolvimento de software, como Cascata, Agile, etc.
 
 \subsection{UML: Unified Modeling Language}
 A Unified Modeling Language (UML) é uma linguagem de modelagem amplamente utilizada para visualizar, especificar, construir e documentar artefatos de sistemas de software \citep{Booch2005}. Criada por Grady Booch, James Rumbaugh e Ivar Jacobson, a UML oferece um conjunto de diagramas padronizados que auxiliam no entendimento e na comunicação entre equipes de desenvolvimento. Segundo \cite{Booch2005}, a UML é composta por diagramas estruturais (como Diagramas de Classe e de Objetos) e comportamentais (como Diagramas de Caso de Uso e de Sequência), que permitem representar diferentes perspectivas de um sistema.
 
-A UML tem sido fundamental para a engenharia de software, especialmente no contexto de desenvolvimento orientado a objetos. Conforme destacado por \cite{Fowler2005}, a linguagem é flexível o suficiente para ser adaptada a diferentes metodologias de desenvolvimento, como o Rational Unified Process (RUP) e métodos ágeis. Além disso, a UML é mantida e atualizada pela Object Management Group (OMG), garantindo sua evolução contínua para atender às necessidades da indústria de software \citep{OMG2017}.
+A UML tem sido fundamental para a engenharia de software, especialmente no contexto de desenvolvimento orientado a objetos. Conforme destacado por \cite{Fowler2005}, a linguagem é flexível o suficiente para ser adaptada a diferentes metodologias de desenvolvimento, como o Rational Unified Process (RUP) e métodos ágeis. Além disso, a UML é mantida e atualizada pela Object Management Group (OMG), garantindo sua evolução contínua para atender às necessidades da indústria de software.
 
 \subsection{Cenário de Caso de Uso}
 Um cenário de caso de uso é uma descrição detalhada de uma sequência de interações entre um usuário (ou ator) e um sistema para alcançar um objetivo específico. Esses cenários são fundamentais na engenharia de software, pois ajudam a identificar e esclarecer os requisitos do sistema, garantindo que todas as possíveis interações sejam consideradas durante o processo de desenvolvimento \citep{pressman2021engenharia}.
@@ -169,16 +155,19 @@ Requisitos funcionais especificam as funções que um sistema deve executar, des
 Requisitos não funcionais referem-se às características de qualidade que o sistema deve possuir, como desempenho, segurança, usabilidade, confiabilidade e escalabilidade. Eles estabelecem restrições e critérios que influenciam a experiência do usuário e a eficácia do sistema, garantindo que o software atenda a padrões de qualidade além das funcionalidades básicas \citep{pressman2021engenharia}.
 
 \section{Desenvolvimento Web}
-\subsection{Conceitos Básicos}
-Definir o que é desenvolvimento web e a sua importância. Diferenciar entre front-end, back-end e full-stack development.
 
-\subsection{Tecnologias Comumente Usadas}
-Descrever as principais linguagens usadas, como HTML, CSS e JavaScript, além de frameworks como React, Angular e Vue.js. Comentar sobre linguagens e frameworks usados para o back-end, como Laravel, Django, Ruby on Rails, etc. Discutir tipos de bancos de dados, relacionais e não relacionais, e o uso de MySQL como exemplo.
+O desenvolvimento web é uma área da tecnologia responsável pela criação, codificação e programação de sites, aplicativos e seus respectivos sistemas, envolvendo tanto aspectos visuais quanto funcionais \citep{queirosintrodução}. Este campo desempenha um papel essencial na democratização do acesso à informação e serviços digitais, permitindo que empresas, instituições e indivíduos alcancem públicos globais por meio da internet.
 
-\subsection{Experiência do Usuário (UX)}
+De acordo com QUEIRÓS E PORTELA (2018), o desenvolvimento web pode ser dividido em três áreas principais: \textit{front-end}, \textit{back-end} e \textit{full-stack development}. O \textit{front-end} refere-se à interface do usuário, ou seja, tudo o que o usuário visualiza e interage diretamente no navegador. Já o \textit{back-end} lida com a lógica do servidor, gerenciamento de dados e integração com bancos de dados. O \textit{full-stack development}, por sua vez, combina ambas as áreas, permitindo que um desenvolvedor trabalhe em todas as camadas de uma aplicação web.
+
+No contexto deste projeto, optou-se por utilizar tecnologias modernas que refletem as tendências atuais do desenvolvimento web. Para o \textit{front-end}, foi adotado um \textit{framework} que facilita a criação de interfaces dinâmicas e responsivas, melhorando significativamente o desempenho e a otimização para mecanismos de busca (SEO). No \textit{back-end}, utilizou-se uma solução de gerenciamento de conteúdo (\textit{headless CMS}) que permite maior flexibilidade no design e na entrega de conteúdo, separando a camada de apresentação da camada de dados.
+
+Os autores destacam que o desenvolvimento web moderno exige uma abordagem global, considerando tanto os aspectos técnicos quanto a experiência do usuário \citeP{queirosintrodução}. Essa perspectiva guiou as escolhas tecnológicas deste trabalho, priorizando desempenho, acessibilidade e facilidade de manutenção.
+
+\section{Experiência do Usuário (UX)}
 A Experiência do Usuário (UX) é um conceito fundamental no design de sistemas interativos, focando na satisfação e na eficiência do usuário ao interagir com um produto ou serviço. Segundo \cite{Norman}, UX abrange todos os aspectos da interação do usuário com uma interface, desde a usabilidade até a experiência emocional.
 
-\subsubsection{Heurísticas de Nielsen}
+\subsection{Heurísticas de Nielsen}
 As heurísticas de Nielsen, propostas por Jakob Nielsen em 1994, são um conjunto de princípios amplamente utilizados para avaliar a usabilidade de interfaces. Essas heurísticas servem como diretrizes para identificar problemas de usabilidade e melhorar a interação do usuário. A seguir, são apresentadas as 10 heurísticas de Nielsen:
 
 \begin{enumerate}
@@ -207,21 +196,12 @@ Essas heurísticas são amplamente utilizadas em avaliações de usabilidade, co
 
 \subsubsection{Análise Heurística}
 A \textbf{Análise Heurística} é um método de avaliação de usabilidade que consiste na inspeção sistemática de uma interface com base em um conjunto de princípios ou heurísticas predefinidas. Esse método é amplamente utilizado para identificar problemas de usabilidade em sites, aplicativos e outros sistemas interativos, sem a necessidade de envolvimento direto dos usuários \citep{Nielsen1994}.
+Os principais objetivos da análise heurística envolvem identificar problemas de usabilidade que possam prejudicar a experiência do usuário; avaliar a conformidade da interface com princípios de design reconhecidos, como as heurísticas de Nielsen; propor melhorias que aumentem a eficiência, a satisfação e a acessibilidade do sistema.
 
-\paragraph{Objetivos da Análise Heurística}
-Os principais objetivos da análise heurística são:
-
-\begin{itemize}
-    \item Identificar problemas de usabilidade que possam prejudicar a experiência do usuário.
-    \item Avaliar a conformidade da interface com princípios de design reconhecidos, como as heurísticas de Nielsen.
-    \item Propor melhorias que aumentem a eficiência, a satisfação e a acessibilidade do sistema.
-\end{itemize}
-
-\paragraph{Etapas da Análise Heurística}
-O processo de análise heurística geralmente envolve as seguintes etapas:
+O processo de análise heurística geralmente é composto pelas etapas de:
 
 \begin{enumerate}
-    \item \textbf{Seleção das Heurísticas}: Escolha um conjunto de heurísticas adequado ao contexto da avaliação, como as heurísticas de Nielsen ou Kanisaty.
+    \item \textbf{Seleção das Heurísticas}: Escolha um conjunto de heurísticas adequado ao contexto da avaliação, como as heurísticas de Nielsen.
     
     \item \textbf{Inspeção da Interface}: Um ou mais avaliadores examinam a interface, aplicando as heurísticas selecionadas para identificar problemas de usabilidade.
     
@@ -232,7 +212,7 @@ O processo de análise heurística geralmente envolve as seguintes etapas:
 
 \subsection{Web Content Accessibility Guidelines (WCAG)}
 
-As \textbf{Web Content Accessibility Guidelines (WCAG)}, desenvolvidas pelo \textbf{W3C}, são padrões globais para acessibilidade digital, garantindo que interfaces sejam acessíveis a todos, incluindo pessoas com deficiências \citep{wcag21}. Organizadas em quatro princípios (\textbf{POUR}), as WCAG abordam:
+Outra coisa relacionada com a experiência de usuário é a acessibilidade, e para metrificar isso exitem as \textbf{Web Content Accessibility Guidelines (WCAG)}, desenvolvidas pelo \textbf{W3C}, que são padrões globais para acessibilidade digital, garantindo que interfaces sejam acessíveis a todos, incluindo pessoas com deficiências \citep{wcag21}. Organizadas em quatro princípios (\textbf{POUR}), as WCAG abordam:
 
 \begin{itemize}
     \item \textbf{Perceivable (Perceptível)}: Conteúdo deve ser apresentado de forma acessível (ex.: alternativas textuais para imagens).
@@ -249,7 +229,7 @@ As WCAG possuem três níveis de conformidade: \textbf{A} (mínimo), \textbf{AA}
 
 \section{JAMstack e Desenvolvimento Web Moderno}
 \label{sec:jamstack}
-A JAM Stack é uma arquitetura moderna para desenvolvimento web que se baseia em três pilares principais: \textbf{JavaScript}, \textbf{APIs} e \textbf{Markup} \citep{jamstackorg}, como exemplificado na Figura \ref{fig:jamStack sigla}\footnote{Disponível em \href{https://cloudbytes.dev/snippets/what-is-jamstack-and-why-should-you-be-using-it}{https://cloudbytes.dev/snippets/what-is-jamstack-and-why-should-you-be-using-it}}. Essa abordagem promove a criação de sites rápidos, seguros e escaláveis, separando o front-end do back-end e utilizando serviços de terceiros para funcionalidades dinâmicas \citep{netlifyjamstack}.
+A JAMstack é uma arquitetura moderna para desenvolvimento web que se baseia em três pilares principais: \textbf{JavaScript}, \textbf{APIs} e \textbf{Markup} \citep{jamstackorg}, como exemplificado na Figura \ref{fig:jamStack sigla}\footnote{Disponível em \href{https://cloudbytes.dev/snippets/what-is-jamstack-and-why-should-you-be-using-it}{https://cloudbytes.dev/snippets/what-is-jamstack-and-why-should-you-be-using-it}}. Essa abordagem promove a criação de sites rápidos, seguros e escaláveis, separando o front-end do back-end e utilizando serviços de terceiros para funcionalidades dinâmicas \citep{netlifyjamstack}.
 
 \begin{figure}[H]
     \centering
@@ -259,9 +239,9 @@ A JAM Stack é uma arquitetura moderna para desenvolvimento web que se baseia em
         \textbf{Fonte:} Rehan Haider}
     \label{fig:jamStack sigla}
 \end{figure}
-De acordo com \cite{smashingmagazine}, a JAM Stack tem ganhado popularidade devido à sua capacidade de simplificar o processo de desenvolvimento, permitindo que desenvolvedores se concentrem na experiência do usuário enquanto delegam tarefas complexas a APIs especializadas. Além disso, a pré-renderização de páginas estáticas contribui para uma melhor performance e segurança, reduzindo a superfície de ataque \citep{jamstackbook}.
+De acordo com \cite{smashingmagazine}, a JAMstack tem ganhado popularidade devido à sua capacidade de simplificar o processo de desenvolvimento, permitindo que desenvolvedores se concentrem na experiência do usuário enquanto delegam tarefas complexas a APIs especializadas. Além disso, a pré-renderização de páginas estáticas contribui para uma melhor performance e segurança, reduzindo a superfície de ataque \citep{jamstackbook}.
 
-A flexibilidade da JAM Stack permite a integração com diversas ferramentas e serviços, como CMS headless, CDNs e ferramentas de automação, tornando-a uma escolha versátil para projetos de diferentes escalas \citep{netlifyjamstack}.
+A flexibilidade da JAMstack permite a integração com diversas ferramentas e serviços, como CMS headless, CDNs e ferramentas de automação, tornando-a uma escolha versátil para projetos de diferentes escalas \citep{netlifyjamstack}.
 
 A arquitetura JAMstack (Figura \ref{fig:jamStack Arquitetura}) se destaca em relação a abordagens mais tradicionais, como o modelo de servidor monolítico e as arquiteturas baseadas em servidores dinâmicos. No modelo monolítico, todo o backend e frontend estão fortemente acoplados, exigindo que o servidor processe cada solicitação do usuário em tempo real. Isso pode gerar tempos de resposta mais lentos, especialmente em aplicações com alto tráfego, e torna mais difícil escalar ou implementar novas funcionalidades de maneira isolada.
 
@@ -269,7 +249,7 @@ A arquitetura JAMstack (Figura \ref{fig:jamStack Arquitetura}) se destaca em rel
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/arquitetura/JAM STACK.png}
     \caption{ Comparação entre arquitetura tradicional e arquitetura JAMstack. \\
-        \textbf{Fonte:} Elaborado pelo autor com base na documentação oficial do JAM Stack.}
+        \textbf{Fonte:} Elaborado pelo autor com base na documentação oficial do JAMstack.}
     \label{fig:jamStack Arquitetura}
 \end{figure}
 
@@ -287,7 +267,26 @@ O \gls{vs-code} é um editor de código-fonte desenvolvido pela Microsoft, ampla
 O Git é um sistema de controle de versão distribuído amplamente utilizado para rastrear alterações no código-fonte durante o desenvolvimento de software. Ele permite que desenvolvedores trabalhem em branches separados, facilitando a colaboração e a integração de mudanças. Já o GitHub é uma plataforma baseada em nuvem que hospeda repositórios Git, oferecendo funcionalidades adicionais como pull requests, issues e integração contínua. Juntos, Git e GitHub formam uma combinação poderosa para gerenciamento de projetos e colaboração em equipe \cite{git,github}.
 
 \subsection{Notion}
- Notion é uma ferramenta de produtividade e organização que combina funcionalidades de notas, banco de dados, listas de tarefas e planejamento em uma única plataforma. Ele foi amplamente utilizado neste trabalho para a criação de quadros \gls{Kanban}, permitindo o gerenciamento visual de tarefas e o acompanhamento do progresso do projeto. Além disso, o Notion foi empregado para o planejamento de etapas, organização de documentação e colaboração em equipe, graças à sua flexibilidade e integração de diferentes tipos de conteúdo em uma única interface. Sua capacidade de personalização e facilidade de uso o tornam uma ferramenta essencial para gestão de projetos e organização pessoal \citep{notion}.
+ Notion é uma ferramenta de produtividade e organização que combina funcionalidades de notas, banco de dados, listas de tarefas e planejamento em uma única plataforma. Ele foi amplamente utilizado neste trabalho para a criação de quadros Kanban \footnote{Kanban é uma ferramenta de gestão visual que utiliza cartões para controlar tarefas e fluxos de atividades, permitindo maior organização e eficiência nos processos. O termo "Kanban" significa "sinalização" ou "cartão" e propõe o uso de post-its para indicar e acompanhar o andamento das atividades \citep{aguiar2007compreendendo}} e calendários (Figura \ref{fig:kanban notion}), permitindo o gerenciamento visual de tarefas e o acompanhamento do progresso do projeto. Além disso, o Notion foi empregado para o planejamento de etapas, organização de documentação e colaboração em equipe, graças à sua flexibilidade e integração de diferentes tipos de conteúdo em uma única interface. Sua capacidade de personalização e facilidade de uso o tornam uma ferramenta essencial para gestão de projetos e organização pessoal \citep{notion}.
+ O Kanban nesse trabalho não foi utilizado como metodologia e sim como ferramenta auxiliar.
+ A Figura \ref{fig:notion inicial} mostra a página inicial usada para organização e planejamento do TCC no Notion.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm, keepaspectratio]{img/Notion/pagina inicial.png}
+    \caption{ Página inicial do Notion para organização do TCC com etapas, \\ documentos úteis e ferramentas. \\
+        \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:notion inicial}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/Notion/kanban.png}
+    \caption{ Quadro Kanban e calendário para gerenciar atividades. \\
+        \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:kanban notion}
+\end{figure}
+
 
 \subsection{Figma}
 O Figma é uma ferramenta de design de interfaces baseada em nuvem, amplamente utilizada para criação de protótipos, designs colaborativos e sistemas de design. Ele se destaca por permitir que múltiplos usuários trabalhem simultaneamente em um mesmo projeto, facilitando a colaboração em tempo real. Além disso, o Figma oferece recursos como componentes reutilizáveis, autolayout e integração com outras ferramentas de desenvolvimento, tornando-o uma escolha popular entre designers e equipes de produto \citep{figma}.
@@ -314,8 +313,7 @@ A Vercel é uma plataforma de \gls{deploy} e hospedagem voltada para aplicaçõe
 \subsection{Heurio}
 A extensão \textbf{Heurio} é uma ferramenta desenvolvida para auxiliar na realização de análises heurísticas de sites e interfaces digitais. Disponível como uma extensão para navegadores, o Heurio permite que profissionais de UX apliquem as heurísticas de usabilidade de forma prática e organizada, identificando problemas de usabilidade e propondo melhorias. \citep{Heurio}.
 
-\subsubsection{Funcionalidades do Heurio}
-O Heurio oferece uma série de funcionalidades que facilitam a análise heurística, incluindo:
+Dentre as funcionalidades do Heurio que facilitam a análise heurística estão:
 
 \begin{itemize}
     \item \textbf{Lista de Heurísticas Integrada}: A extensão inclui uma lista de heurísticas de usabilidade, como as de Nielsen, que podem ser selecionadas e aplicadas diretamente durante a avaliação da interface.
@@ -329,10 +327,7 @@ O Heurio oferece uma série de funcionalidades que facilitam a análise heuríst
     \item \textbf{Colaboração em Equipe}: O Heurio suporta a colaboração entre múltiplos avaliadores, permitindo que equipes trabalhem juntas na mesma análise e compartilhem insights.
 \end{itemize}
 
-\subsubsection{Aplicação do Heurio}
-O Heurio é particularmente útil em projetos de \textit{redesign} de sites, avaliação de protótipos e testes de usabilidade. Ele pode ser utilizado por equipes de \gls{ux}, designers e desenvolvedores para garantir que as interfaces atendam aos princípios de usabilidade e proporcionem uma experiência positiva ao usuário. Além disso, a ferramenta é flexível o suficiente para ser adaptada a diferentes contextos e metodologias de avaliação.
-
-A extensão Heurio é um exemplo de como a tecnologia pode ser utilizada para aprimorar práticas de UX, tornando a análise heurística mais acessível e eficiente \citep{Heurio}.
+Essa ferramenta é particularmente útil em projetos de \textit{redesign} de sites, avaliação de protótipos e testes de usabilidade. Ela pode ser utilizada por equipes de \gls{ux}, designers e desenvolvedores para garantir que as interfaces atendam aos princípios de usabilidade e proporcionem uma experiência positiva ao usuário. Além disso, a ferramenta é flexível o suficiente para ser adaptada a diferentes contextos e metodologias de avaliação. \citep{Heurio}.
 
 \subsection{Inno Setup}
 O Inno Setup é um instalador gratuito para programas Windows, amplamente utilizado devido à sua facilidade de configuração e flexibilidade. Ele permite a criação de scripts de instalação personalizados, suportando recursos como criação de atalhos, registro de DLLs e desinstalação completa. Sua sintaxe é baseada em arquivos de texto no formato \texttt{.iss}, que são compilados para gerar executáveis de instalação. Por ser leve e de código aberto, o Inno Setup é uma escolha popular para desenvolvedores que buscam uma solução eficiente para distribuição de software \citep{innosetup}.

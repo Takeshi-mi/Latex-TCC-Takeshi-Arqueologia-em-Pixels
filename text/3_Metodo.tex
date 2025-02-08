@@ -31,25 +31,73 @@ Neste trabalho, as fases da DSR foram adaptadas para um modelo de cinco etapas, 
 Essa adaptação mantém a essência da DSR ao abranger a identificação do problema, definição dos objetivos, construção da solução, avaliação e comunicação dos resultados, garantindo uma abordagem estruturada e alinhada aos objetivos do projeto.
 
 \section{Fase 1: Identificação do Problema}\label{definicao_do_problema}
-O problema central foi a ineficácia do site antigo (Blogger) em divulgar e preservar o patrimônio arqueológico, devido a limitações técnicas, baixa usabilidade e identidade visual desatualizada. Tudo isso compromete o alcance e a experiência do usuário. Além disso, as abordagens tradicionais de divulgação digital, baseadas apenas em imagens e textos, não permitem uma exploração mais imersiva e interativa do patrimônio, reduzindo o engajamento e dificultando a compreensão espacial dos sítios arqueológicos. Portanto, objetiva-se a construção de um Ambiente Virtual 3D que possa ser baixado pelo site.
-
-Para validá-lo, realizou-se:
+As abordagens tradicionais de divulgação digital, baseadas em imagens estáticas e textos, limitam a interatividade e a imersão necessárias para explorar sítios arqueológicos. Essa falta de recursos modernos reduz o engajamento do público e dificulta a compreensão espacial desses patrimônios.
+No caso do patrimônio arqueológico de Formosa, Goiás, o site original no Blogger desempenhou um papel importante na documentação inicial e na democratização do acesso a pesquisas sobre o Bisnau. No entanto, suas limitações técnicas, como baixa usabilidade, identidade visual desatualizada e restrições de personalização, comprometem a experiência do usuário e o alcance do conteúdo.
+Para superar essas limitações, propôs-se o desenvolvimento de um Ambiente Virtual 3D, que permitirá uma exploração imersiva dos sítios arqueológicos e poderá ser baixado pelo novo site. A validação da proposta incluiu:
 
 \begin{itemize}
-    \item \textbf{Visitas de campo}: Para coleta de imagens e informações sobre os sítios arqueológicos. Observou-se deterioração humana e natural, como pichações e erosão.
-    \item \textbf{Análise Heurística}: Baseada nas 10 heurísticas de Nielsen, identificando falhas críticas (ex: navegação confusa).
+\item \textbf{Visitas de campo}: Coleta de imagens e informações sobre os sítios, observando deteriorações como pichações e erosão.
+\item \textbf{Análise Heurística}: Avaliação do site original com base nas 10 heurísticas de Nielsen, identificando falhas críticas como navegação confusa e falta de acessibilidade.
 \end{itemize}
 
 \subsection{Visitas de Campo}
+As visitas de campo foram realizadas no sítio arqueológico da Lapa da Pedra, localizado na região nordeste de Formosa, Goiás. Conforme descrito no Referencial Teórico (\ref{sec:sitio lapa da pedra}), o sítio abriga 29 grutas, das quais sete contêm registros de arte rupestre. A Gruta IV S. = Gruta XIV M.–-47.302462,-15.493179 foi o foco principal deste trabalho, sendo a maior e a que contém mais desenhos.
 
-Detalhar as visitas, colocar fotos, descrever o que foi observado, etc.
+Durante as visitas, observou-se que as pinturas estão distribuídas em alturas variáveis, desde 0,40 metros até 7,50 metros, em superfícies lisas, saliências e reentrâncias naturais do calcário. Apesar de sua relevância histórica, foram identificados sinais de deterioração tanto natural quanto antrópica. Entre os danos naturais, destacam-se a descamação da tinta, infiltrações e fissuras nas rochas, conforme discutido na seção sobre ameaças à preservação (\ref{sec:amecas a preservação}).
+
+Quanto à ação humana, notou-se pichações e escritas superpostas às pinturas originais (Figura \ref{fig:degradacao vera}), reflexo da falta de conscientização sobre a importância cultural do sítio. Esses indícios reforçam a necessidade de estratégias de preservação digital e divulgação ampla, como discutido na Introdução.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/Visitas tecnicas/depredacao vera.JPG}
+    \caption{Escritas superpostas à pinturas original. \\ Está escrito "Vera visitou em 28 de 10 de 62". \\
+        \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:degradacao vera}
+\end{figure}
+
+Além disso, a localização do sítio em uma propriedade privada, a Fazenda Pedra, contribuiu para sua preservação parcial, mas também limita o acesso e a visibilidade do patrimônio para a população local. Essa constatação evidencia a urgência de iniciativas que promovam a democratização do acesso ao patrimônio cultural, alinhadas ao objetivo deste projeto.
 
 \subsection{Análise Heurística do Antigo Site}
-A análise heurística foi realizada no site antigo (Blogger) com base nas 10 heurísticas de Nielsen com o auxílio da ferramenta Heurio. A análise foi feita por quatro avaliadores: Naoki Rafael Miura, Victor Hugo Sales dos Reis, Sara Candido Fernandes e Erik Takeshi Miura, que identificaram problemas de usabilidade e navegabilidade.
+A análise heurística foi realizada no site antigo hospedado na plataforma Blogger com o auxílio da ferramenta Heurio, utilizando como referência as 10 heurísticas de usabilidade propostas por Jakob Nielsen (1994). A análise foi feita por quatro avaliadores: Naoki Rafael Miura, Victor Hugo Sales dos Reis, Sara Candido Fernandes e Erik Takeshi Miura, que identificaram problemas de usabilidade e navegabilidade.
+A Figura \ref{fig:interface heurio} mostra a interface do Heurio, enquanto as Figuras \ref{fig:comentario heurio} e \ref{fig:fluxo} mostram o fluxo para inserir as observações da análise, que envolve a identificação do problema, a sugestão de melhoria e a indicação de qual heurística o problema está relacionado.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/heurio/interface heurio.png}
+    \caption{ Interface da ferramenta Heurio. Ela exibe o site a ser analisado, \\ os comentários já feitos no lado esquerdo e os grupos de heurísticas do lado direito. \\
+        \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:interface heurio}
+\end{figure}
 
-Mostrar print do Heurio, descrever os problemas encontrados, etc.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[height=6cm, keepaspectratio]{img/heurio/habilitar comentários.png}
+        \caption{Botão de habilitar comentários no Heurio.  \\
+            \textbf{Fonte:} Elaborado pelo autor.}
+        \label{fig:comentario heurio}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[height=6cm, keepaspectratio]{img/heurio/fluxo heurio.png}
+        \caption{Fluxo de observações incluindo identificação \\do problema, sugestão e heurística relacionada. \\
+            \textbf{Fonte:} Elaborado pelo autor.}
+        \label{fig:fluxo heurio}
+    \end{minipage}
+\end{figure}
+
+Por fim, a ferramenta Heurio gera um quadro para visualização como se fosse um relatório (Figura \ref{fig:quadro resultados}). Essas observações de cada um dos analistas foram reunidas e contribuíram para a identificação do problema, possibilitando a melhoria do site. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=8cm, keepaspectratio]{img/heurio/quadro resultados.png}
+    \caption{ Quadro de resultados gerado após a análise do Heurio. \\
+        \textbf{Fonte:} Elaborado pelo autor.}
+    \label{fig:quadro resultados}
+\end{figure}
+
 
 \section{Fase 2: Definição dos Objetivos da Solução}\label{definicao_dos_objetivos_da_solucao}
+Essa fase envolve a especificação do que a solução deve alcançar. Para isso foi utilizada a técnica de engenharia de requisitos.
 \subsection{Coleta de Requisitos}
 Coleta de requisitos foi realizada por meio de questionário online e entrevistas formais e informais com professores do IFG, resultando em 13 requisitos funcionais (Apêndice \ref{ap:requisitos-site-table}) e 13 não funcionais (Apêndice \ref{ap:requisitos-nao-funcionais-site-table}) para o site. Para o ambiente virtual há quatro requisitos funcionais (Apêndice \ref{ap:requisitos-ambiente-table}) e 2 requisitos não funcionais (Apêndice \ref{ap:requisitos-nao-funcionais-ambiente}). Todos os requisitos podem ser consultados no apêndice. 
 
@@ -97,7 +145,7 @@ Desejável & Requisito que pode ser deixado para versões futuras sem compromete
 RFS001 & Exemplo de Nome & Exemplo de descrição do requisito & Essencial, Importante ou Desejável \\ \hline
 \end{longtable}
 }
-Para acessar os requisitos gerados na íntegra, consulte o Apêndice \ref{apendice}.
+Para acessar os requisitos gerados na íntegra, consulte os Apêndices \ref{apendice} e \ref{Apendice B}.
 
 
 \section{Fase 3: Design e Desenvolvimento}\label{sec: Fase 3 design e desenvolvimento}
@@ -143,19 +191,18 @@ Atender aos requisitos RFA002 (Navegação em Terceira Pessoa), RFA003 (Alternâ
 % Ciclo 3
 \subsection*{Ciclo 3: Prototipação do Novo Site} \label{subsec:ciclo3}
 
-\subsubsection*{Objetivo do Ciclo}
-Atender aos requisitos RNFS006 (Acessibilidade), RNFS008 (Responsividade) e RNFS014 (Usabilidade).
+\textbf{Objetivo do Ciclo}: Desenvolver um protótipo o novo site, atendendo aos requisitos funcionais RFS002 (Exibir Galeria de Imagens), RFS006 (Buscar Trabalhos por Filtros) e RFS007 (Informações de Contato), bem como aos requisitos não funcionais RNFS006 (Acessibilidade), RNFS008 (Responsividade) e RNFS012 (SEO).
 
-\subsubsection*{Ações Realizadas}
+\subsection{Ações Realizadas}
 \begin{enumerate}
-    \item Análise das referências e inspirações enviadas pelo professor Edson Borges por meio de um questionário, garantindo alinhamento com suas expectativas e visão para o site.
-    \item Reorganização da arquitetura da informação, agrupando conteúdos relevantes, reduzindo informações desnecessárias e minimizando a quantidade de cliques para que o usuário encontrasse a informação desejada (RF006, RNFS014).
-    \item Criação de wireframes para estruturar a interface e definir a disposição dos elementos visuais e interativos do site.
-    \item Definição da paleta de cores e tipografia, garantindo coerência visual e acessibilidade (RNFS006, RNFS014).
-    \item Criação de uma nova logo, inspirada nas cores das artes rupestres encontradas na Lapa da Pedra, reforçando a identidade visual do projeto.
-    \item Desenvolvimento de um protótipo de alta fidelidade no Figma, representando a versão final do site com design refinado (RF002, RF006, RNFS014).
-    \item Validação e refinamento do protótipo a partir de feedbacks coletados com o professor e colegas, garantindo alinhamento com as necessidades do projeto e uma experiência de usuário otimizada.
-    \item Organização eficiente do projeto no Figma garantindo um ambiente estruturado e facilitando futuras iterações e implementações.
+    \item Análise das referências e inspirações enviadas pelo professor Edson Borges por meio de um questionário.
+    \item Reorganização da arquitetura da informação, agrupando conteúdos relevantes e reduzindo cliques (RNFS006).
+    \item Criação de wireframes para estruturar a interface e definir a disposição dos elementos visuais (RNFS008).
+    % \item Definição da paleta de cores e tipografia, garantindo coerência visual e acessibilidade (RNFS006).
+    \item Criação de uma nova logo, inspirada nas cores das artes rupestres da Lapa da Pedra.
+    \item Desenvolvimento de um protótipo de alta fidelidade no Figma, representando a versão final do site.
+    \item Validação e refinamento do protótipo a partir de feedbacks coletados com o professor e colegas.
+    \item Organização eficiente do projeto no Figma, facilitando futuras iterações e implementações.
 \end{enumerate}
 
 \textbf{Resultado}: Protótipo de alta fidelidade bem estruturado e validado, garantindo acessibilidade, melhor navegação, identidade visual consistente e um layout flexível para futuras alterações e desenvolvimento (RNFS006, RNFS008, RNFS014).
@@ -197,7 +244,7 @@ Atender aos requisitos funcionais e não funcionais do site. O desenvolvimento a
 
 Os resultados foram divulgados através de:
 \begin{itemize}
-    \item \textbf{Documentação Acadêmica}: Este TCC
+    \item \textbf{Documentação Acadêmica}: Este TCC;
     \item \textbf{Publicação Online}: Site em \url{https://arqueologiaformosa.com.br}.
 \end{itemize}
 
