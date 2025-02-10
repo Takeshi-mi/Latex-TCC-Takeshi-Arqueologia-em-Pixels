@@ -7,7 +7,7 @@ Nesta seção, detalha-se o processo de desenvolvimento do projeto, abrangendo t
 \section{Ciclo 1: Fotogrametria e Construção do Modelo 3D}
 \label{sec:ciclo1_fotogrametria}
 
-\textbf{Objetivo}: Criar um modelo 3D detalhado baseado em imagens capturadas em campo. Atender ao RFA001 (Modelo 3D de Alta Qualidade) e garantir compatibilidade com Unreal Engine 5.4. 
+\textbf{Objetivo do ciclo}: Criar um modelo 3D detalhado baseado em imagens capturadas em campo. Atender ao RFA001 (Modelo 3D de Alta Qualidade) e garantir compatibilidade com Unreal Engine 5.4. 
 
 A seguir o processo é descrito detalhadamente.
     \subsection{Visitas de campo e Captura de Imagens} 
@@ -52,7 +52,7 @@ A seguir o processo é descrito detalhadamente.
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/imagens capturas.png}
     \caption{Fotografias capturadas com superposição de 70\%.\\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:fotos tiradas}   
 \end{figure}
 
@@ -67,7 +67,7 @@ A partir da nuvem de pontos esparsa, o software gera uma nuvem de pontos densa (
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/cameras alinhamento.png}
         \caption{Alinhamento das imagens pelo software Reality Capture. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:alinhamento}
 \end{figure}
 
@@ -75,7 +75,7 @@ A partir da nuvem de pontos esparsa, o software gera uma nuvem de pontos densa (
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/primeiro modelo componente.png}
         \caption{Nuvem de pontos densa. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:nuvem de pontos}
 \end{figure}
 
@@ -86,7 +86,7 @@ Para eliminar pontos indesejados, como vegetação ou objetos móveis, foi reali
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/Criação de nuvem de pontos.png}
         \caption{Identificação dos pontos indesejados para filtragem. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:filtragem}
 \end{figure}
 
@@ -96,7 +96,7 @@ Com base na nuvem de pontos densa filtrada, o software gerou a malha poligonal d
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/modelo solido e foto.png}
         \caption{Identificação dos pontos indesejados para filtragem. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:modelo 3D solido}
 \end{figure}
 
@@ -107,20 +107,20 @@ O processo de texturização atribuiu cores e detalhes visuais à malha poligona
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/102M textura.png}
         \caption{Modelo texturizado de alta qualidade com 102 milhões de polígonos, parte exterior. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:texturizado}
 \end{figure}
 \begin{figure}[H]
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/interior.png}
         \caption{Modelo texturizado de alta qualidade com 102 milhões de polígonos, parte interior. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:interior}
 \end{figure}
 \end{enumerate}
     \subsection{Simplificação do Modelo 3D, garantindo compatibilidade com a Unreal Engine (RFA001).}
   
-Devido ao tamanho do modelo inicial (102 milhões de polígonos), foi necessário realizar um processo de simplificação para torná-lo mais leve e compatível para uso em softwares como a Unreal Engine, que suporta bem até 5 milhões de polígonos. A malha foi reduzida consideravelmente tornando-o mais leve, porém a qualidade ficou muito ruim deixando os desenhos praticamete apagados, como mostra a Figura \ref{fig:modelo ruim}
+Devido ao tamanho do modelo inicial (102 milhões de polígonos), foi necessário realizar um processo de simplificação para torná-lo mais leve e compatível para uso em softwares como a Unreal Engine, que suporta bem até 5 milhões de polígonos. A malha foi reduzida consideravelmente tornando-o mais leve, porém a qualidade ficou muito ruim deixando os desenhos praticamente apagados, como mostra a Figura \ref{fig:modelo ruim}
 
 \begin{figure}[H]
     \centering
@@ -129,7 +129,7 @@ Devido ao tamanho do modelo inicial (102 milhões de polígonos), foi necessári
         \centering
         \includegraphics[height=5cm, keepaspectratio]{img/reality e fotogrametria processo/modelo ruim.png}
         \caption{Modelo simplificado com 5 milhões \\ de polígonos. Desenho apagado. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:modelo ruim}
     \end{minipage}
     \hspace{1cm} % Espaço fixo de 0.5cm entre as figuras
@@ -138,7 +138,7 @@ Devido ao tamanho do modelo inicial (102 milhões de polígonos), foi necessári
         \centering
         \includegraphics[height=5cm, keepaspectratio]{img/reality e fotogrametria processo/desenho bom retroprojeção.png}
         \caption{Modelo simplificado com reprojeção \\ de textura. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:desenho bom}
     \end{minipage}
 \end{figure}
@@ -150,7 +150,7 @@ Para manter a qualidade visual do modelo simplificado, foi aplicada a técnica d
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/unwrap.png}
         \caption{Processo de Mapeamento UV. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:unwrap}
 \end{figure}
 
@@ -159,13 +159,13 @@ Todo o processo no Reality Capture é demorado e cada etapa pode consumir vária
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/reality e fotogrametria processo/reprojeção.png}
         \caption{Processamento da reprojeção de textura. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:reprojecao tempo}
 \end{figure}
 
 
 \end{enumerate}
-\subsection{Considerações Finais do Ciclo 1}
+\subsection*{Considerações Finais do Ciclo 1}
 O processo de fotogrametria no Reality Capture demonstrou ser uma ferramenta poderosa para a geração de modelos 3D detalhados. A combinação de técnicas como a simplificação de malhas e a reprojeção de textura permitiu criar modelos otimizados para uso em softwares como a Unreal Engine, mantendo alta qualidade visual. Este fluxo de trabalho é essencial para aplicações em um ambiente virtual, a qual é a próxima etapa.
 
 
@@ -175,7 +175,7 @@ O processo de fotogrametria no Reality Capture demonstrou ser uma ferramenta pod
 \label{sec:ciclo2_unreal}
 A escolha da plataforma Unreal Engine 5.4 para a criação do ambiente virtual 3D se justifica pela sua capacidade de gerar experiências imersivas e interativas. O Unreal Engine é um motor de criação de jogos amplamente utilizado na indústria de jogos, cinema e arquitetura. A plataforma oferece recursos como simulação de luz, movimentações de câmera e personagens, e a possibilidade de interagir com os elementos do ambiente, tornando o ambiente virtual 3D mais realista e envolvente \citep{silva2022realidade}.
 
-\textbf{Objetivo}: Desenvolver um ambiente virtual interativo na Unreal Engine 5.4 que atenda aos requisitos funcionais RFA002 (Navegação em Terceira Pessoa), RFA003 (Alternância de Câmera), RFA004 (Avatar Personalizado), bem como aos requisitos não funcionais RNFA001 (Compatibilidade com Windows), RNFA002 (Documentação de Instalação) e RNFA003 (Instalação Simplificada). Este ciclo aborda a importação do modelo 3D otimizado, a criação do cenário virtual, a implementação de funcionalidades interativas e a preparação para distribuição.
+\textbf{Objetivo do ciclo}: Desenvolver um ambiente virtual interativo na Unreal Engine 5.4 que atenda aos requisitos funcionais RFA002 (Navegação em Terceira Pessoa), RFA003 (Alternância de Câmera), RFA004 (Avatar Personalizado), bem como aos requisitos não funcionais RNFA001 (Compatibilidade com Windows), RNFA002 (Documentação de Instalação) e RNFA003 (Instalação Simplificada). Este ciclo aborda a importação do modelo 3D otimizado, a criação do cenário virtual, a implementação de funcionalidades interativas e a preparação para distribuição.
 
 \subsection{Importação do Modelo 3D Otimizado na Unreal Engine 5.4}
 O modelo 3D simplificado e texturizado, gerado no Reality Capture durante o Ciclo 1, foi importado para a Unreal Engine 5.4. Durante a importação, foram realizados ajustes nas propriedades do modelo, incluindo:
@@ -190,7 +190,7 @@ O modelo 3D simplificado e texturizado, gerado no Reality Capture durante o Cicl
         \centering
         \includegraphics[height=6cm, keepaspectratio]{img/unreal/escala.png}
         \caption{Ajuste na escala comparando com uma foto real de\\ um ser humano na entrada da gruta. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:escala}
 \end{figure}
 
@@ -198,7 +198,7 @@ O modelo 3D simplificado e texturizado, gerado no Reality Capture durante o Cicl
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/unreal/colisão.png}
         \caption{Colisão dos objetos na cena dentro da Unreal Engine. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:colisao}
 \end{figure}
 
@@ -206,7 +206,7 @@ O modelo 3D simplificado e texturizado, gerado no Reality Capture durante o Cicl
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/unreal/}
         \caption{Colisão dos objetos na cena dentro da Unreal Engine. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:colisao}
 \end{figure}
 
@@ -222,7 +222,7 @@ A Figura \ref{fig:grama} apresenta o cenário virtual sendo preenchido com eleme
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/unreal/paisagem grass.png}
         \caption{Processo de criação e preenchimento do cenário. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:grama}
 \end{figure}
 
@@ -235,11 +235,7 @@ Foi desenvolvido um sistema de navegação em terceira pessoa, permitindo que o 
 \end{itemize}
 
 \subsection{Criação de Avatar Personalizado no Metahuman (RFA004)}
-Um avatar personalizado foi criado utilizando o Metahuman Creator, uma ferramenta da Unreal Engine para geração de personagens humanos altamente realistas. O avatar foi projetado para se assemelhar ao professor Edson Borges, com base em referências fotográficas fornecidas. As etapas incluíram:
-\begin{enumerate}
-    \item Modelagem facial detalhada no Metahuman Creator.
-    \item Customização barba, roupas e acessórios para refletir a aparência do professor.
-    \item Importação do avatar para a Unreal Engine e integração com o sistema de controle de personagem (Figura \ref{fig:metahumancamera}).
+Um avatar personalizado foi criado utilizando o Metahuman Creator, uma ferramenta da Unreal Engine para geração de personagens humanos altamente realistas. O avatar foi projetado para se assemelhar ao professor Edson Borges, com base em referências fotográficas fornecidas. As etapas incluíram a modelagem facial detalhada no Metahuman Creator; a customização barba, roupas e acessórios para refletir a aparência do professor e a importação do avatar para a Unreal Engine e integração com o sistema de controle de personagem (Figura \ref{fig:metahumancamera}).
 \end{enumerate}
 
 A Figura \ref{fig:metahumanEdsonn} exibe o avatar finalizado no ambiente virtual.
@@ -248,7 +244,7 @@ A Figura \ref{fig:metahumanEdsonn} exibe o avatar finalizado no ambiente virtual
         \centering
 \includegraphics[height=8cm, keepaspectratio]{img/unreal/ajuste de câmera edson.png}
         \caption{Importação do Metahuman do professor Edson \\ para se tornar um personagem controlável. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:metahumancamera}
 \end{figure}
 
@@ -256,17 +252,14 @@ A Figura \ref{fig:metahumanEdsonn} exibe o avatar finalizado no ambiente virtual
         \centering
 \includegraphics[height=8cm, keepaspectratio]{img/unreal/metahuman dentro da caverna.png}
         \caption{Avatar digital do professor Edson Borges no ambiente virtual. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:metahumanEdsonn}
 \end{figure}
 
 
 \subsection{Desenvolvimento do Sistema de Alternância de Câmera (RFA003)}
-Foi implementado um sistema de alternância de câmera, permitindo que o usuário alterne entre visão em primeira e terceira pessoa. Essa funcionalidade foi desenvolvida utilizando Blueprints, a linguagem visual de programação da Unreal Engine. O sistema inclui:
-\begin{itemize}
-    \item Ajustes na posição e orientação das câmeras para garantir uma experiência imersiva.
-    \item Um botão dedicado para alternar entre as câmeras.
-\end{itemize}
+Foi implementado um sistema de alternância de câmera, permitindo que o usuário alterne entre visão em primeira e terceira pessoa. Essa funcionalidade foi desenvolvida utilizando Blueprints, a linguagem visual de programação da Unreal Engine. O sistema inclui ajustes na posição e orientação das câmeras para garantir uma experiência imersiva e um botão dedicado para alternar entre as câmeras.
+
 A Figura \ref{fig:config_camera} mostra o processo de posicionamento e configuração da câmera. A Figura \ref{fig:alternarcamera} ilustra a alternância de câmera em funcionamento.
 Foi configurada a tecla "C"  como sendo responsável por alternar entre as câmeras, e a configuração da \textit{Blueprint} utilizada pode ser vista na Figura \ref{fig:blueprint_camera}.
 
@@ -274,7 +267,7 @@ Foi configurada a tecla "C"  como sendo responsável por alternar entre as câme
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/unreal/ajuste de câmera 1ºpessoa.png}
         \caption{Colisão dos objetos na cena dentro da Unreal Engine. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:config_camera}
 \end{figure}
 
@@ -282,7 +275,7 @@ Foi configurada a tecla "C"  como sendo responsável por alternar entre as câme
         \centering
         \includegraphics[height=6cm, keepaspectratio]{img/unreal/1 pessoa e 3 pessoa comparacao.png}
         \caption{Ajuste de posicionamento da câmera do avatar.
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:alternarcamera}
 \end{figure}
 
@@ -290,7 +283,7 @@ Foi configurada a tecla "C"  como sendo responsável por alternar entre as câme
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/unreal/blueprint troca de câmera.png}
         \caption{Lógica da Blueprint para troca de câmeras
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:blueprint_camera}
 \end{figure}
 
@@ -302,7 +295,7 @@ A interface foi projetada para ser intuitiva e esteticamente agradável, utiliza
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/unreal/menu com controles.png}
         \caption{Tela de menu do ambiente virtual. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:tela_menu}
 \end{figure}
 
@@ -314,7 +307,7 @@ O ambiente virtual foi empacotado em um arquivo executável (.exe) para distribu
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/Inno setup/configuracao do instalador.png}
         \caption{Configurações iniciais para construir o instalador \\ na ferramenta Inno Setup \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:configuracao_inno_setup}
 \end{figure}
 
@@ -325,7 +318,7 @@ Com o instalador criado basta dar um duplo clique no arquivo para começar o pro
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/Inno setup/multiidiomas.png}
         \caption{Interface do instalador do ambiente virtual personalizado pelo Inno Setup \\ com suporte a múltiplos idiomas \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:idiomas}
 \end{figure}
 
@@ -334,7 +327,7 @@ Com o instalador criado basta dar um duplo clique no arquivo para começar o pro
         \centering
         \includegraphics[height=12cm, keepaspectratio]{img/Inno setup/fluxo de instalação.png}
         \caption{Fluxo de instalação após a escolha do idioma. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:fluxo}
 \end{figure}
 
@@ -343,7 +336,7 @@ Com o instalador criado basta dar um duplo clique no arquivo para começar o pro
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/Inno setup/íconearea de trabalho.png}
         \caption{Atalho para o programa gerado na área de trabalho \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:atalho_icone}
 \end{figure}
     
@@ -352,14 +345,12 @@ Com o instalador criado basta dar um duplo clique no arquivo para começar o pro
 
 
 
-\subsection{Considerações Finais do Ciclo 2}
+\subsection*{Considerações Finais do Ciclo 2}
 O Ciclo 2 resultou na criação de um ambiente virtual interativo e imersivo, integrando o modelo 3D otimizado da Lapa da Pedra a um cenário rico e funcional na Unreal Engine 5.4. O ambiente virtual gerado nessa etapa está pronto para ser disponibilizado para distribuição no site que será construído nas etapas posteriores.
 
 
 
 % Ciclo 3
-\section{Ciclo 3: Prototipação do Novo Site}
-\label{sec:ciclo3_prototipacao}
 
 % \textbf{Objetivo}: Criar um protótipo de alta fidelidade para o site.
 
@@ -383,7 +374,7 @@ O processo teve início com uma análise detalhada das referências e inspiraç�
     \centering
     \includegraphics[height=6cm, keepaspectratio]{img/Protótipo/inspiração.png}
     \caption{ Inspirações de outros sites de arqueologia, sites com boa estética, \\ paleta de cores ou forma atrativa. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:inpirações}
 \end{figure}
 
@@ -400,7 +391,7 @@ Para estruturar a interface do site, foram criados \textit{wireframes}\footnote{
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/Protótipo/wireframes.png}
         \caption{Wireframes de baixa fidelidade no Figma. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:wireframes}
     \end{minipage}
     \hfill
@@ -408,7 +399,7 @@ Para estruturar a interface do site, foram criados \textit{wireframes}\footnote{
         \centering
         \includegraphics[height=8cm, keepaspectratio]{img/Protótipo/wireframe.png}
         \caption{Wireframe de baixa fidelidade no Figma. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:wireframe}
     \end{minipage}
 \end{figure}
@@ -422,7 +413,7 @@ Uma logo foi desenvolvida para o site, inspirada nas cores e formas das artes ru
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Protótipo/logo.png}
     \caption{ Logo do site Arqueologia Formosa inspirada nos pictoglifos e rochas da Lapa da Pedra. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:logo_arqueologia_formosa}
 \end{figure}
 
@@ -434,7 +425,7 @@ Com base nos \textit{wireframes} e nas decisões de design, foram desenvolvidos 
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Protótipo/todos alta fidelidade.png}
     \caption{ Protótipos de Alta Fidelidade das telas principais no Figma. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:prototipos_alta_fidelidade}
 \end{figure}
 
@@ -446,7 +437,7 @@ As Figuras \ref{fig:prototipo_home} e \ref{fig:prototipo_lapadapedra} apresentam
         \centering
         \includegraphics[height=24cm, keepaspectratio]{img/Protótipo/home prototipo.png}
         \caption{Protótipo de alta fidelidade da página inicial. \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:prototipo_home}
     \end{minipage}
     \hfill
@@ -454,55 +445,136 @@ As Figuras \ref{fig:prototipo_home} e \ref{fig:prototipo_lapadapedra} apresentam
         \centering
         \includegraphics[height=24cm, keepaspectratio]{img/Protótipo/prototipo alta fidelidade toca da onça.png}
         \caption{Protótipo de alta fidelidade \\da página do Sítio Arqueológico da Lapa da Pedra \\
-            \textbf{Fonte:} Elaborado pelo autor.}
+            \textbf{Fonte:} elaborado pelo autor, 2025.}
         \label{fig:prototipo_lapadapedra}
     \end{minipage}
 \end{figure}
 
-\subsection{Considerações Finais do Ciclo 3}
+\subsection*{Considerações Finais do Ciclo 3}
 O Ciclo 3 resultou no desenvolvimento de um protótipo de alta fidelidade para o novo site.O design final segue bons princípios de design, as heurísticas de Nielsen e é alinhado com a identidade cultural do projeto. O protótipo está pronto para implementação e servirá como base para a construção do site final, que é o próximo ciclo. 
 
 % Ciclo 4
 \section{Ciclo 4: Desenvolvimento do Novo Site}
 \label{sec:ciclo4_desenvolvimento}
 
-\textbf{Objetivo}: Implementar o site final baseado no protótipo validado.
+O objetivo deste ciclo é implementar o a interface e as funcionalidades planejadas no protótipo feito no ciclo anterior, buscando atender aos requisitos funcionais e não funcionais do site. O desenvolvimento abrange a maioria dos requisitos especificados nas tabelas \ref{ap:requisitos-site-table} e \ref{ap:requisitos-nao-funcionais-site-table}, garantindo acessibilidade (RNFS006), responsividade (RNFS008), gerenciamento dinâmico de conteúdo (RFS009) e otimização de desempenho (RNFS001, RNFS011).
 
-\textbf{Processo}:
-\begin{itemize}
-    \item Configuração do ambiente \textit{JAMstack} com Next.js, Sanity e Schema UI.
-    \item Implementação de páginas e funcionalidades.
-    \item Otimizações de performance e SEO.
-    \item Testes e ajustes finais.
-\end{itemize}
+    \subsection{Configuração do ambiente de desenvolvimento}
+     Foi definida a arquitetura \textit{JAMstack}, utilizando o \textit{framework} \textit{Next.js 15} no \textit{frontend} para garantir alta performance e SEO otimizado (RNFS012). Para o gerenciamento de conteúdo, foi utilizado o \textit{Sanity}, um CMS headless que permite a criação e manutenção de conteúdo de forma dinâmica e flexível (RFS009). A biblioteca \textit{Schema UI} foi integrada para facilitar a construção de componentes reutilizáveis e consistentes. Além disso, foi configurado um repositório no \href{https://github.com/Takeshi-mi/arqueologiaFormosa}{Github} para controle de versão e escolhida a hospedagem na Vercel, que oferece otimização automática de desempenho e redução de custos operacionais (RNFS011). O repositório git está acessível em https://github.com/Takeshi-mi/arqueologiaFormosa.
+
+    
+    \subsection{Estrutura da Base de Dados no Sanity}
+     O Sanity utiliza um modelo NoSQL para armazenamento de dados, permitindo flexibilidade na definição de esquemas (\textit{schemas}) e relacionamentos entre documentos. A Figura \ref{fig:diagrama sanity} apresenta o diagrama de representação da base de dados.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[height=7cm, keepaspectratio]{img/diagrama sanity.png}
+        \caption{ Representação da base de dados não relacional do site.\\
+            \textbf{Fonte:} Elaborado pelo autor, 2025.}
+        \label{fig:diagrama sanity}
+    \end{figure}
+
+    \subsubsection{Integração do Sanity com os Componentes}
+    No Sanity, um componente funcional depende de três elementos essenciais: o \textbf{schema}, que define a estrutura dos dados e garante a consistência do conteúdo; a \textbf{query}, escrita em GROQ\footnote{GROQ: Linguagem de consulta desenvolvida pelo Sanity para recuperar e manipular dados de forma eficiente em bancos NoSQL, permitindo filtrar, ordenar e estruturar informações conforme necessário.}, que recupera os dados do backend de forma eficiente e os disponibiliza para uso; e o \textbf{código do componente}, responsável por transformar esses dados em uma interface visual e interativa.
+    Para facilitar, existe a biblioteca \href{https://schemaui.com/docs/}{Schema UI}, que desempenhou um papel relevante no processo de desenvolvimento ao agilizar a criação e personalização de interfaces no Sanity. Ela disponibiliza um conjunto de componentes pré-construídos, que podem ser utilizados diretamente ou adaptados para atender às necessidades específicas do projeto. Esses componentes simplificam a implementação do código do componente , permitindo que o foco seja direcionado à personalização visual e funcional, sem a necessidade de criar soluções do zero. Nos casos em que os componentes fornecidos pela biblioteca não atenderam as necessidades do projeto, foram criados componentes personalizados, como foi o caso do componente de embed para adicionar os mapas e modelos 3D diretamente na tela. A Figura \ref{fig:schemaui} apresenta um exemplo da documentação do \textit{Schema UI}, exemplificando o uso dos três elementos essenciais para que um componente integrado com Sanity funcione corretamente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=24cm, keepaspectratio]{img/shcema ui qualidade.png}
+    \caption{ Captura de tela da documentação do \textit{Schema UI} do componente de cartão "GRID POST". \\
+        \textbf{Fonte:} Elaborado pelo autor com base na documentação da biblioteca \href{https://schemaui.com/docs/components/grid/grid-post}{Schema UI}, 2025.}
+    \label{fig:schemaui}
+\end{figure}
+
+
+
+    \subsection{Estrutura de Pastas no Next.js} O projeto foi organizado em uma estrutura de pastas clara e modular, seguindo as boas práticas do Next.js. A Figura \ref{fig:estrutura_pastas} apresenta a estrutura de diretórios. Essa organização facilita a manutenção do código e a implementação de novas funcionalidades (RNFS004).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=18cm, keepaspectratio]{img/site/estrutura de diretórios.png}
+    \caption{ Estrutura de diretórios do projeto em Next.js. \\
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
+    \label{fig:estrutura_pastas}
+\end{figure}
+
+    \subsection{Implementação da estrutura e funcionalidades do site}
+    Com tudo preparado era hora de estilizar e povoar o site com as informações e identidade visual planejada.
+    \begin{enumerate}
+        \item \textbf{Implementação de páginas-chave}:
+        \begin{enumerate}
+            \item Página inicial com navegação hierárquica, garantindo fácil acesso às principais seções do site (RFS006, RNFS014).
+            \item Seções específicas para sítios arqueológicos, incluindo galerias de imagens (RFS002) e mapas integrados ao Google My Maps (RFS012).
+            \item Página de Contato, com formulário funcional e informações de contato visíveis (RFS007).
+            \item Página de trabalhos escritos com filtros dinâmicos, permitindo busca por categorias e tags (RFS006).
+            \end{enumerate}
+            Todas as páginas podem ser vistas no Apêndice \ref{ap:páginas_do_site}.
+        \item \textbf{Implementação das funcionalidades}:
+            \begin{enumerate}
+            \item Adição de suporte para modo escuro/claro (RNFS011), permitindo alternância entre temas com base nas preferências do usuário (Figura \ref{fig:claro escuro};
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[height=7cm, keepaspectratio]{img/site/claro escuro.png}
+                        \caption{ Funcionalidade modo claro/escuro. \\
+                            \textbf{Fonte:} elaborado pelo autor, 2025.}
+                        \label{fig:claro escuro}
+                    \end{figure}
+                                
+            \item Integração com o \textit{Sanity Studio} que atua como uma área do administrador para gerenciamento dinâmico de conteúdo, como artigos, imagens e metadados (RFS009, RNFS013). A interface de administrador é demonstrada na Figura \ref{fig:sanity_admin};
+
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[height=9cm, keepaspectratio]{img/sanity/sanity admin.png}
+                        \caption{ Interface de edição do Sanity Studio. \\
+                            \textbf{Fonte:} elaborado pelo autor, 2025.}
+                        \label{fig:sanity_admin}
+                    \end{figure}
+        
+            \item Implementação de funcionalidades de compartilhamento nas redes sociais (RFS005), demosntrado na Figura \ref{fig:redes sociais}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[height=8cm, keepaspectratio]{img/site/redes sociais.png}
+                        \caption{ Estrutura de diretórios do projeto em Next.js. \\
+                            \textbf{Fonte:} elaborado pelo autor, 2025.}
+                        \label{fig:redes sociais}
+                    \end{figure}
+        \end{enumerate}
+    \end{enumerate}
+        
+
+
+\subsubsection*{Considerações Finais do Ciclo 4}
+O Ciclo 4 resultou no desenvolvimento completo do site, atendendo plenamente aos requisitos funcionais e não funcionais estabelecidos. A arquitetura \textit{JAMstack}, combinada com o uso do \textit{Next.js} e \textit{Sanity}, garantiu um sistema robusto, escalável e de alto desempenho. O código Até essa etapa o site foi desenvolvido em ambiente local. Nas próximas etapas serão detalhados os processos de testes e disponibilização para o público.
+
+
+
+
 
 % avaliacao
 \section{Avaliação e Testes}
 \label{sec:avaliacao_testes}
 
-\textbf{Objetivo}: Garantir que a solução atenda aos requisitos definidos.
+Para garantir que a solução atenda aos requisitos definidos foram realizados testes de usabilidade, com usuários clicando e testando as funcionalidades e verificando se estavam de acordo com o que foi planejado e com auxílio de análise heurística.
 
-\textbf{Processo}:
-\begin{itemize}
-    \item Testes de usabilidade.
-    \item Validação heurística.
-    \item Avaliação de performance e responsividade.
-\end{itemize}
+Também foi verificada a performance e acessibilidade do site por meio da ferramenta \textit{Lighthouse}. Os resultados dos testes estão apresentados na seção de resultados.
+O site foi testado em 6 navegadores diferentes para verificar a compatibilidade. Os navegadores foram: Microsoft Edge, Google Chrome, Opera GX, Firefox, Brave, e Safari.
+
+Foi produzido um plano de testes detalhado que não foi implementado completamente, mas pode servir como direcionamento futuro. O plano de testes está no Apêndice \ref{ap:plano de testes}.
 
 % Deploy
 \section{Publicação e Deploy}
 \label{sec:publicacao_deploy}
 
-\textbf{Objetivo}: Tornar o projeto acessível ao público.
+Está foi uma fase importante para tornar o projeto acessível ao público. A seguir é detalhado o processo, que envolveu:
 
-\textbf{Processo}:
 \begin{itemize}
-    \item Deploy na Vercel e disponibilização pública do site (Figura \ref{fig:deploy_vercel}). 
+    \item Hospedagem\footnote{Hospedagem é o serviço que disponibiliza os recursos necessários (como servidores e infraestrutura) para armazenar e entregar um site ou aplicação na internet.} e \textit{deploy}\footnote{Deploy é o processo de colocar uma aplicação ou site em produção, tornando-o acessível aos usuários finais, geralmente envolvendo a transferência de código para um ambiente de hospedagem.} na Vercel (Figura \ref{fig:deploy_vercel}). 
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Deploy/deploy_vercel.png}
     \caption{ Captura de tela do processo de deploy na vercel com esteira CI/CD integrada. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:deploy_vercel}
 \end{figure}
 
@@ -511,7 +583,7 @@ O Ciclo 3 resultou no desenvolvimento de um protótipo de alta fidelidade para o
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Deploy/domínio-registro.br.png}
     \caption{ Domínio disponível para compra no site \href{www.registro.br}{Registro.br}. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:dominio_registro_br}
 \end{figure}
 
@@ -520,7 +592,7 @@ O Ciclo 3 resultou no desenvolvimento de um protótipo de alta fidelidade para o
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Deploy/configuração de dns registrobr.png}
     \caption{ Configuração de DNS para apontar o domínio para a Vercel. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} elaborado pelo autor, 2025.}
     \label{fig:dns}
 \end{figure}
 

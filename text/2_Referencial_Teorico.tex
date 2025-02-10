@@ -26,7 +26,7 @@ Dentre as 29 grutas, a Gruta catalogada por Schmitz como IV–GO-EC-002 (04), se
     \centering
     \includegraphics[height=11cm, keepaspectratio]{img/Entrada Gruta IV Toca da Onça.jpeg}
     \caption{Entrada da Gruta IV, Toca da Onça. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:Entrada da Gruta IV,Toca da Onça}
 \end{figure}
 
@@ -34,7 +34,7 @@ Dentre as 29 grutas, a Gruta catalogada por Schmitz como IV–GO-EC-002 (04), se
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Visitas tecnicas/mapa.png}
     \caption{ Diagrama em cima da captura de tela do Google Earth \\ na localização das grutas da Lapa da Pedra. Captura de tela realizada em junho de 2024 \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:mapa}
 \end{figure}
 
@@ -51,7 +51,7 @@ Em relação à Toca da Onça, os seguintes exemplos de impactos causados pela a
     \centering
     \includegraphics[height=11cm, keepaspectratio]{img/jogo da velha.jpeg}
     \caption{Depredação do Patrimônio na Toca da Onça. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:degradacao_toca_onca}
 \end{figure}
 
@@ -109,7 +109,7 @@ Um aspecto fundamental para a integração convincente de Metahumans em ambiente
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/skeleton.png}
     \caption{Captura de tela do Esqueleto digital \\de um avatar na Unreal Engine.\\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:skeleton}
 \end{figure}
 
@@ -117,7 +117,7 @@ Um aspecto fundamental para a integração convincente de Metahumans em ambiente
     \centering
     \includegraphics[height=8cm, keepaspectratio]{gif/animacoes/feature_body_motion-0000.jpg}
     \caption{ Captura de tela do pacote de animações Unreal.\\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:animacoes}
 \end{figure}
 
@@ -128,7 +128,7 @@ A Figura \ref{fig:metahumanEdson} ilustra a aplicação da tecnologia MetaHuman 
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Metahuman.png}
     \caption{Criação do Avatar Digital do professor Edson Borges. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:metahumanEdson}
 \end{figure}
 
@@ -243,19 +243,19 @@ De acordo com \cite{smashingmagazine}, a JAMstack tem ganhado popularidade devid
 
 A flexibilidade da JAMstack permite a integração com diversas ferramentas e serviços, como CMS headless, CDNs e ferramentas de automação, tornando-a uma escolha versátil para projetos de diferentes escalas \citep{netlifyjamstack}.
 
-A arquitetura JAMstack (Figura \ref{fig:jamStack Arquitetura}) se destaca em relação a abordagens mais tradicionais, como o modelo de servidor monolítico e as arquiteturas baseadas em servidores dinâmicos. No modelo monolítico, todo o backend e frontend estão fortemente acoplados, exigindo que o servidor processe cada solicitação do usuário em tempo real. Isso pode gerar tempos de resposta mais lentos, especialmente em aplicações com alto tráfego, e torna mais difícil escalar ou implementar novas funcionalidades de maneira isolada.
+A arquitetura JAMstack (Figura \ref{fig:jamStack Arquitetura}) se destaca em relação a abordagens mais tradicionais, como o modelo de servidor monolítico e as arquiteturas baseadas em servidores dinâmicos. No modelo monolítico, todo o \textit{backend} e \textit{frontend} estão fortemente acoplados, exigindo que o servidor processe cada solicitação do usuário em tempo real. Isso pode gerar tempos de resposta mais lentos, especialmente em aplicações com alto tráfego, e torna mais difícil escalar ou implementar novas funcionalidades de maneira isolada.
 
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/arquitetura/JAM STACK.png}
     \caption{ Comparação entre arquitetura tradicional e arquitetura JAMstack. \\
-        \textbf{Fonte:} Elaborado pelo autor com base na documentação oficial do JAMstack.}
+        \textbf{Fonte:} Elaborado pelo autor com base na documentação oficial do JAMstack, 2024.}
     \label{fig:jamStack Arquitetura}
 \end{figure}
 
 Já nas arquiteturas dinâmicas baseadas em servidores, como as utilizadas em sistemas gerenciadores de conteúdo tradicionais (ex.: WordPress), cada requisição ao site frequentemente aciona o servidor para buscar dados no banco e gerar a página no momento da requisição. Esse modelo pode causar problemas de performance e segurança, principalmente em picos de tráfego, além de depender de uma infraestrutura robusta para manter a operação.
-Em contraste, a JAMstack evita a necessidade de renderização em tempo de execução, pré-gerando as páginas como arquivos estáticos no momento do build. Isso garante maior rapidez, segurança e escalabilidade, já que as páginas podem ser servidas diretamente por uma CDN sem passar por servidores intermediários. Além disso, ao desacoplar o frontend do backend, a JAMstack permite maior flexibilidade, facilitando a integração com APIs e serviços especializados, como sistemas de pagamento ou autenticação.
-Por outro lado, a JAMstack apresenta limitações quando comparada a arquiteturas como microserviços ou serverless, que também oferecem modularidade e flexibilidade. Embora APIs desempenhem um papel fundamental na JAMstack, aplicações com lógica de negócios altamente complexa podem exigir um backend mais robusto, algo que arquiteturas serverless ou baseadas em microserviços conseguem oferecer de forma mais eficiente.
+Em contraste, a JAMstack evita a necessidade de renderização em tempo de execução, pré-gerando as páginas como arquivos estáticos no momento do build. Isso garante maior rapidez, segurança e escalabilidade, já que as páginas podem ser servidas diretamente por uma CDN sem passar por servidores intermediários. Além disso, ao desacoplar o \textit{frontend} do backend, a JAMstack permite maior flexibilidade, facilitando a integração com APIs e serviços especializados, como sistemas de pagamento ou autenticação.
+Por outro lado, a JAMstack apresenta limitações quando comparada a arquiteturas como microserviços ou serverless, que também oferecem modularidade e flexibilidade. Embora APIs desempenhem um papel fundamental na JAMstack, aplicações com lógica de negócios altamente complexa podem exigir um \textit{backend} mais robusto, algo que arquiteturas serverless ou baseadas em microserviços conseguem oferecer de forma mais eficiente.
 
 \section{Ferramentas Utilizadas}
 Nesta seção, são apresentadas as principais ferramentas utilizadas no desenvolvimento deste trabalho, destacando suas funcionalidades e relevância para o projeto.
@@ -275,7 +275,7 @@ O Git é um sistema de controle de versão distribuído amplamente utilizado par
     \centering
     \includegraphics[height=6cm, keepaspectratio]{img/Notion/pagina inicial.png}
     \caption{ Página inicial do Notion para organização do TCC com etapas, \\ documentos úteis e ferramentas. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:notion inicial}
 \end{figure}
 
@@ -283,7 +283,7 @@ O Git é um sistema de controle de versão distribuído amplamente utilizado par
     \centering
     \includegraphics[height=8cm, keepaspectratio]{img/Notion/kanban.png}
     \caption{ Quadro Kanban e calendário para gerenciar atividades. \\
-        \textbf{Fonte:} Elaborado pelo autor.}
+        \textbf{Fonte:} Elaborado pelo autor, 2024.}
     \label{fig:kanban notion}
 \end{figure}
 
@@ -306,6 +306,10 @@ O Figma é uma ferramenta de design de interfaces baseada em nuvem, amplamente u
 % A integração do Unreal Engine com ferramentas como o Reality Capture é outro ponto forte. Modelos 3D gerados a partir de digitalizações do mundo real podem ser importados diretamente para o motor, onde podem ser manipulados e incorporados em projetos interativos. Essa combinação de tecnologias tem sido amplamente utilizada na criação de jogos realistas, simulações arquitetônicas e até mesmo em produções cinematográficas \citep{UnrealEngine2023}.
 
 % Na área de educação, o Unreal Engine tem sido empregado para desenvolver simulações interativas e ambientes de aprendizagem imersivos. Sua flexibilidade e suporte a múltiplas plataformas, incluindo dispositivos móveis e realidade virtual, tornam-no uma escolha popular para projetos que exigem inovação e engajamento \citep{UnrealEngine2023}.
+
+\subsection{Sanity}
+O Sanity é um CMS (\textit{Content Management System}) headless\footnote{ Um Sistema de Gerenciamento de Conteúdo (CMS) é uma ferramenta ou plataforma que permite criar, gerenciar e organizar conteúdo digital, como textos, imagens e vídeos, sem a necessidade de conhecimento técnico avançado. Tradicionalmente, um CMS inclui tanto o \textit{backend} (onde o conteúdo é criado e armazenado) quanto o \textit{frontend} (onde o conteúdo é exibido). No caso de CMSs \textit{headless}, como o Sanity, o \textit{frontend} é desacoplado, permitindo maior flexibilidade na forma como o conteúdo é consumido e apresentado.} que se destaca por sua flexibilidade e arquitetura baseada em NoSQL, permitindo a criação de esquemas personalizados e facilitando a entrega de conteúdo em múltiplos canais digitais \citep{sanity_official}. Ele é frequentemente utilizado em conjunto com \textit{frameworks} modernos, como o Next.js, para criar soluções eficientes e escaláveis, onde o Sanity atua como \textit{backend} de conteúdo e o Next.js como \textit{frontend} responsivo e performático. Essa integração reflete uma abordagem contemporânea de desenvolvimento web, alinhada à ideia de sistemas modulares e desacoplados, conforme discutido por \cite{gamma2000padrões} que exploram a evolução das arquiteturas de software, além de funcionar muito bem com a arquitetura JAMstack. 
+
 
 \subsection{Vercel}
 A Vercel é uma plataforma de \gls{deploy} e hospedagem voltada para aplicações modernas, especialmente aquelas construídas com \glspl{framework} como Next.js, React e outros. Ela oferece integração contínua, escalabilidade automática e um desempenho otimizado para aplicações web estáticas e dinâmicas. Com foco na experiência do desenvolvedor, a Vercel simplifica o processo de publicação, permitindo que atualizações sejam feitas rapidamente através de integração com \gls{repositorio-git}. Sua infraestrutura global de \glsboth{cdn} garante baixa latência e alta disponibilidade para usuários finais \citep{vercel}.
