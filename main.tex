@@ -92,6 +92,11 @@
 \usepackage{float}    % Para usar [H] nas figuras
 \usepackage[numbers]{natbib} % Para usar \citep
 \usepackage{enumitem} % Para melhor controle das listas aninhadas
+\usepackage{fontspec} %pra poder usar fonte em japones ou outros idiomas
+\usepackage{pdfpages} % Para incluir páginas de PDFs
+
+
+\newfontfamily\japanesefont{Noto Sans CJK JP} 
 
 \makeglossaries
 % Comando personalizado
@@ -100,7 +105,8 @@
     \glsadd{#1-gloss} % Adiciona a entrada correspondente no glossário
 }
 \input{text/acronimos}
-% \input{text/glossario}
+\input{text/glossario}
+
 
 
 % Configuração de legendas
@@ -138,13 +144,13 @@
 % Título e autores
 \title{
 ARQUEOLOGIA FORMOSA:
-Plataforma Web e Ambiente Virtual Imersivo para 
+Plataforma Web e Ambiente Virtual para 
 Preservação da Arte Rupestre Formosense 
 }
 \date{2025}
 \author{Erik Takeshi Miura}
 \adviser{Prof. Me. Afrânio Furtado de Oliveira Neto}
-\coadviser{Prof. Dr. Edson Rodrigues Borges}
+\coadviser{Prof. Me. Edson Rodrigues Borges}
 
 % Início do Documento
 \begin{document}
@@ -186,9 +192,12 @@ Tudo o que fizeres, fazei com excelência.
 
 % Listas de Figuras e Tabelas
 \listoffigures
+\addcontentsline{toc}{chapter}{Lista de Figuras}
 \listoftables
+\addcontentsline{toc}{chapter}{Lista de Tabelas}
+\input{pré-texto/glossario} 
 \printglossary[type=\acronymtype, title={Acrônimos}] %lista de acrônimos
-\printglossary %glossário
+\addcontentsline{toc}{chapter}{Lista de Acrônimos}
 
 % Corpo do TCC
 \mainmatter

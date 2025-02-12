@@ -16,8 +16,6 @@ O presente trabalho adota a metodologia \gls{dsr}, conforme descrita por \cite{p
     \item \textbf{Comunicação}: Divulgação dos resultados para a comunidade científica e profissionais da área.
 \end{enumerate}
 
-\section{Adaptação para Cinco Fases}
-
 Neste trabalho, as fases da DSR foram adaptadas para um modelo de cinco etapas, de forma a organizar melhor o fluxo do projeto:
 
 \begin{enumerate}
@@ -156,27 +154,27 @@ Neste projeto, os ciclos foram organizados de forma a contemplar as principais e
 \subsection*{Ciclo 1: Fotogrametria e Construção do Modelo 3D} \label{subsec:ciclo1}
 
 \subsubsection*{Objetivo do Ciclo}
-Criar um modelo 3D detalhado baseado em imagens capturadas em campo. Atender ao RFA001 (Modelo 3D de Alta Qualidade) e garantir compatibilidade com Unreal Engine 5.4. 
+Criar um modelo 3D detalhado baseado em imagens capturadas em campo. Atender ao RFA001 (Modelo 3D de Alta Qualidade) e garantir compatibilidade com \textit{Unreal Engine} 5.4. 
 
 \subsubsection*{Ações Realizadas}
 \begin{enumerate}
     \item Captura de imagens de alta resolução de diferentes ângulos do sítio da Lapa da Pedra e seleção para remover fotos com ruídos.
-    \item Processamento no Reality Capture para reconstrução fotogramétrica, resultando em um modelo inicial com 102 milhões de polígonos.
-    \item Simplificação do modelo para 5 milhões de polígonos, garantindo compatibilidade com a Unreal Engine (RFA001).
+    \item Processamento no \textit{RealityCapture} para reconstrução fotogramétrica, resultando em um modelo inicial com 102 milhões de polígonos.
+    \item Simplificação do modelo para 5 milhões de polígonos, garantindo compatibilidade com a \textit{Unreal Engine} (RFA001).
     \item Reprojeção de textura do modelo de alta resolução para o modelo simplificado, mantendo a qualidade visual.
 \end{enumerate}
 
-\textbf{Resultado}: Modelo 3D detalhado e otimizado para uso no ambiente virtual, garantindo fidelidade visual e desempenho adequado na Unreal Engine 5.4 (RFA001).
+\textbf{Resultado}: Modelo 3D detalhado e otimizado para uso no ambiente virtual, garantindo fidelidade visual e desempenho adequado na \textit{Unreal Engine} 5.4 (RFA001).
 
 % Ciclo 2
-\subsection*{Ciclo 2: Construção do Ambiente Virtual na Unreal Engine 5.4} \label{subsec:ciclo2}
+\subsection*{Ciclo 2: Construção do Ambiente Virtual na \textit{Unreal Engine} 5.4} \label{subsec:ciclo2}
 
 \subsubsection*{Objetivo do Ciclo}
 Atender aos requisitos RFA002 (Navegação em Terceira Pessoa), RFA003 (Alternância de Câmera), RFA004 (Avatar Personalizado), RNFA001 (Compatibilidade com Windows), RNFA002 (Documentação de Instalação) e RNFA003 (Instalação Simplificada).
 
 \subsubsection*{Ações Realizadas}
 \begin{enumerate}
-    \item Importação do modelo 3D otimizado na Unreal Engine 5.4.
+    \item Importação do modelo 3D otimizado na \textit{Unreal Engine} 5.4.
     \item Criação do cenário virtual com texturas realistas e iluminação dinâmica.
     \item Implementação do sistema de navegação em terceira pessoa com controle de um avatar interativo (RFA002).
     \item Criação de um avatar personalizado no Metahuman com aparência semelhante ao professor Edson Borges (RFA004).
@@ -214,7 +212,7 @@ Atender aos requisitos funcionais e não funcionais do site. O desenvolvimento a
 
 \subsubsection*{Ações Realizadas}
 \begin{enumerate}
-\item \textbf{Configuração do ambiente de desenvolvimento}: Definição da arquitetura \textit{JAMstack}, utilizando o \textit{framework} \textit{Next.js} e a biblioteca \textit{Schema UI} no \textit{frontend} e \textit{Sanity} como CMS headless, além da configuração do repositório no Git e escolha da hospedagem na Vercel para otimização de desempenho e redução de custos (RNFS001, RNFS008, RNFS011).
+\item \textbf{Configuração do ambiente de desenvolvimento}: Definição da arquitetura \textit{JAMstack}, utilizando o \textit{framework} \textit{Next.js} e a biblioteca \textit{Schema UI} no \textit{front-end} e \textit{Sanity} como CMS headless, além da configuração do repositório no Git e escolha da hospedagem na Vercel para otimização de desempenho e redução de custos (RNFS001, RNFS008, RNFS011).
 
     
     \item \textbf{Implementação da estrutura e funcionalidades do site}
